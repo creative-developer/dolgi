@@ -1,0 +1,29 @@
+.nav
+
+	&__list
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 12px 41px
+
+	&__item
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: -12px
+			left: 50%
+			transform: translateX(-50%)
+			width: 128.3%
+			height: 3px
+			background: #91E0C5
+			opacity: 0
+		&--active
+			&:after
+				opacity: 1
+
+	&__link
+		font-weight: 600
+		font-size: 16px
+		line-height: 19px
+		color: #fff

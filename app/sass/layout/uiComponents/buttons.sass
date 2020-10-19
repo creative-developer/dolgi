@@ -1,0 +1,62 @@
+////////// Default btn
+.btn
+	position: relative
+	display: inline-block
+	font-size: 14px
+	border-radius: 4px
+	color: #fff
+	text-align: center
+	text-decoration: none
+	padding: 10px 30px
+	background-color: $c1
+	border: none
+	outline: none
+	transition: all .3s ease
+	user-select: none
+	&:focus:not(.disabled),
+	&:hover:not(.disabled)
+		outline: none
+		cursor: pointer
+		color: #fff
+		text-decoration: none
+		background-color: lighten($c1, 10%)
+	&:active:not(.disabled)
+		background-color: darken($c1, 5%)
+
+	&.disabled
+		opacity: .4
+
+.trs-btn
+	position: relative
+	display: inline-flex
+	align-items: center
+	font-weight: 500
+	font-size: 15px
+	line-height: 18px
+	color: $c1
+	border-radius: 3px
+	text-decoration: none
+	padding: 16px 24.22px
+	background-color: transparent
+	border: 1px solid #D2D8E3
+	outline: none
+	transition: all .3s ease
+	user-select: none
+	&:focus:not(.disabled),
+	&:hover:not(.disabled)
+		outline: none
+		cursor: pointer
+		color: $c1
+		text-decoration: none
+		background-color: transparent
+	&:active:not(.disabled)
+	&.disabled
+		opacity: .4
+
+	&__icon
+		width: 18px
+		height: 18px
+		&-wrap
+			display: flex
+			align-items: center
+			margin-right: 13px
