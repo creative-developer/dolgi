@@ -1,0 +1,19 @@
+extend ../layout/template
+
+block head
+    - var title = '-  Какие документы нужны, если ребенок поедет с одним из родителей? | Новости'
+    |
+    |
+
+block content
+    +breadcrumbs([
+        { path: '/news', title: 'Новости' },
+        { path: '', title: 'Какие документы нужны, если ребенок поедет с одним из родителей?' }
+    ])
+
+    main.b-news-page
+        .container
+            .row
+                .col-lg-9
+                    h1._title Какие документы нужны, если ребенок поедет с одним из родителей?
+                .col-lg-3

@@ -16,3 +16,9 @@ app/js/main.bundle.js
 
 # html
 app/*.html
+
+#materials
+materials/
+
+#Mac os DS_Store
+.DS_Store

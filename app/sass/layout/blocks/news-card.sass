@@ -1,0 +1,52 @@
+.news-card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    border-radius: 8px
+    overflow: hidden
+
+    &--default
+        border: 1px solid $bdColor
+        &:hover
+            border-color: #28AA7E
+            .news-card
+                &__title
+                    color: $accentLighten
+                &__more-link
+                    color: $c2
+                    &::after
+                        opacity: 0
+
+    &__img-wrap
+        height: 200px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__content
+        flex: 1
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        padding: 31px 35px
+
+    &__published-on
+        font-size: 15px
+        line-height: 15px
+        color: $c2
+        margin-bottom: 24px
+
+    &__title
+        flex: 1
+        font-size: 15px
+        line-height: 22px
+        font-weight: 500
+        color: $c1
+        margin-bottom: 25px
+        transition: all .4s ease
+
+    &__more-link
+        margin-bottom: 3px
