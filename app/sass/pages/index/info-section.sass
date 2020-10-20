@@ -1,0 +1,40 @@
+.info-section
+	padding: 78px 0 79px
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		max-width: 1140px
+		height: 1px
+		background: #D2D8E3
+
+	&__col
+		padding: 0 $gridPadding
+		&--left
+			flex-basis: 59.5%
+			max-width: 59.5%
+		&--right
+			flex-basis: 40.5%
+			max-width: 40.5%
+	&__title
+		margin-bottom: 30px
+
+	&__sub-title
+		font-weight: 500
+		color: $c0
+		margin-bottom: 40px
+
+	&__simple-list
+		margin-bottom: 30px
+
+	&__desc
+		color: $c1
+		max-width: 720px
+		p
+			margin-bottom: 0
+
+	&__info-card
+		margin-left: auto

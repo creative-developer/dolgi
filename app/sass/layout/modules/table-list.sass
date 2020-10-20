@@ -1,0 +1,22 @@
+.table-list
+	&--price
+		.table-list
+			&__text
+				&--value
+					color: $accent
+	&__item
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-radius: 5px
+		padding: 13.5px 10px
+		&:nth-child(odd)
+			background: rgba(#F2F5F4, 0.75)
+
+	&__text
+		font-size: 13px
+		line-height: 13px
+		&--title
+			color: $c1
+		&--value
+			font-weight: 500
