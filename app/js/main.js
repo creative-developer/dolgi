@@ -1,5 +1,4 @@
 import { mediaQueries } from './mediaQueries/mediaQueries'
-// import { formInit } from './modules/form'
 import { popupsInit } from './modules/popups'
 import { menuInit } from './modules/menu'
 import { inputsMaskInit } from './modules/inputsMask'
@@ -12,7 +11,6 @@ mediaQueries()
 menuInit()
 inputsMaskInit()
 popupsInit()
-// formInit()
 datePickerInit()
 customSelectInit()
 validationInit()

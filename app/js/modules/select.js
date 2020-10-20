@@ -13,7 +13,6 @@ export const customSelectInit = () => {
         $(this).find('.jq-selectbox__search input').focus()
       },
       onSelectClosed: function () {
-        // $(this).find('.jq-selectbox__search input').focus()
         validator.element('select')
       },
       onFormStyled: function () {

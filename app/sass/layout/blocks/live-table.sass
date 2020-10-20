@@ -1,0 +1,46 @@
+.live-table
+	width: 100%
+	thead
+		background: #FFFFFF
+		border: 1px solid $accentLighten
+		tr
+
+	tbody
+		tr
+			&:first-child
+				td
+					padding-top: 28px
+			&:nth-child(even)
+				td
+					background: rgba(#F2F5F4, 0.65)
+					&:not(:last-child)
+						border-right: 2px solid #fff
+
+	th
+		font-size: 15px
+		font-weight: normal
+		line-height: 15px
+		color: $c0
+		padding: 17px 38px 16px 30px
+		vertical-align: middle
+		&:first-child
+			padding: 17px 0 16px 20px
+			border-top-left-radius: 2px
+			border-bottom-left-radius: 2px
+
+	td
+		font-size: 13px
+		line-height: 13px
+		color: #000000
+		vertical-align: middle
+		padding: 18px 38px 18px 30px
+		&:first-child
+			padding: 18px 0 18px 20px
+			font-weight: 500
+		&:nth-child(4)
+			color: $c1
+
+		&.red
+			color: $warningColor
+		&.green
+			color: $accentLighten
