@@ -5,6 +5,7 @@ import { inputsMaskInit } from './modules/inputsMask'
 import { datePickerInit } from './modules/datePicker'
 import { customSelectInit } from './modules/select'
 import { validationInit } from './modules/validation'
+import { slider } from './modules/sliders'
 
 // initFunctions
 mediaQueries()
@@ -14,3 +15,4 @@ popupsInit()
 datePickerInit()
 customSelectInit()
 validationInit()
+slider()
