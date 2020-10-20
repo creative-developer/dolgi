@@ -1,0 +1,67 @@
+.services-card
+	background: #FFFFFF
+	border-radius: 5px
+	border: 1px solid $bdColor
+	padding: 34px 40px 29px 29px
+	position: relative
+	z-index: 100
+
+	&__top-line
+		display: flex
+		align-items: flex-start
+		margin-bottom: 17px
+
+	&__img
+		&-wrap
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 52px
+			height: 52px
+			min-width: 52px
+			min-height: 52px
+			margin-right: 19px
+
+	&__title
+		font-weight: 600
+		font-size: 17px
+		line-height: 22px
+		color: $c1
+
+	&__desc
+		position: relative
+		font-size: 13px
+		line-height: 20px
+		color: $c2
+		margin-bottom: 25px
+		min-height: 40px
+		max-width: 245px
+		z-index: 100
+
+	&__link
+		display: flex
+		align-items: center
+		font-weight: 500
+		font-size: 13px
+		line-height: 13px
+		color: $accent
+		background: rgba(#C0DFD9, 0.2)
+		border-radius: 3px
+		padding: 14.5px 22px
+		max-width: 130px
+		&:hover
+			color: $accentLighten
+			background: rgba(#C0DFD9, 0.3)
+			.services-card__link-icon-wrap
+				transform: translateX(2px)
+		&-text
+			margin-right: 6px
+		&-icon-wrap
+			display: flex
+			align-items: center
+			margin-top: 1px
+			transition: all 0.3s ease
+			svg
+				width: 9px
+				height: 8px
+				fill: #BABABA
