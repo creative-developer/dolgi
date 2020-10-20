@@ -1,7 +1,6 @@
 export const inputsMaskInit = () => {
   // Phone input mask
-  $('input[type="tel"]').inputmask({
-    mask: '+7 (999) 999-99-99',
-    showMaskOnHover: false,
-  })
+  $('input[name="phone"]').inputmask('+7 (999) 999-99-99')
+  $('input[name="birthDate"]').inputmask('99.99.9999')
+  $('input[name="passportSeries"]').inputmask('99 99 999999')
 }

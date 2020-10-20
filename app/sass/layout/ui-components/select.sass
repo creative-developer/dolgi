@@ -1,0 +1,132 @@
+// Custom select
+.select-wrap
+	position: relative
+	width: 100%
+	select.valid
+		& + .jq-selectbox__select
+			border-color: #9ED8C4
+			background: #FCFFFE
+	select.error
+		& + .jq-selectbox__select
+			border-color: $warningColor
+			background: #FFFEFE
+
+	&__text
+		display: inline-block
+		font-size: 15px
+		line-height: 18px
+		color: $c0
+		margin-bottom: 10px
+
+.jq-selectbox
+	height: 100% !important
+	width: 100%
+	transition: all .3s ease
+	max-width: 100%
+	&.opened
+		.jq-selectbox
+			&__select
+			&__trigger
+				svg
+					fill: $accent
+
+	&__select
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 15px
+		line-height: 18px
+		color: $c1
+		background: #fff
+		overflow: hidden
+		border-radius: 5px
+		padding: 15px 17px
+		border: 1px solid $bdColor
+		cursor: pointer
+		transition: all .3s ease
+		max-width: 100%
+		&:hover
+			border-color: #A1AEC4
+		+lg
+			font-size: 14px
+			line-height: 14px
+			padding: 16px 25px 16px 16px
+		&-text
+			&.placeholder
+				color: #BABABA
+
+	&__trigger
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		z-index: 1
+		svg
+			width: 11px
+			height: 6px
+			fill: #578ADE
+			transition: all 0.3s ease
+
+	&__dropdown
+		width: 100%
+		font-size: 15px
+		line-height: 15px
+		padding: 0
+		background: #fff
+		max-width: 100%
+		ul
+			max-height: 188px !important
+			padding: 17px 10px
+			border: 1px solid $bdColor
+			border-radius: 5px
+			margin-top: -1px
+			li
+				position: relative
+				padding: 8px 10px
+				cursor: pointer
+				overflow: hidden
+				text-overflow: ellipsis
+				transition: all .3s ease
+				// &:after
+				// 	content: ''
+				// 	position: absolute
+				// 	top: 50%
+				// 	left: -5px
+				// 	transform: translateY(-50%)
+				// 	width: 7px
+				// 	height: 7px
+				// 	background: url('../img/icons/selected.svg') no-repeat center center
+				// 	opacity: 0
+				// 	transition: all 0.3s ease
+				&:hover
+					background: #F2F5F8
+				// &.sel
+				// 	&:after
+				// 		opacity: 1
+
+	&__search
+		position: absolute
+		top: -50px
+		left: 0
+		width: 100%
+		input
+			display: flex
+			align-items: center
+			justify-content: space-between
+			font-size: 15px
+			line-height: 18px
+			color: $c1
+			background: #fff
+			padding: 15px 17px
+			border-radius: 5px
+			border: 1px solid $bdColor
+			cursor: pointer
+			overflow: hidden
+			transition: all .3s ease
+			+lg
+				font-size: 14px
+				line-height: 14px
+				padding: 15px 16px
+
+	&__not-found
+		padding: 10px 24px

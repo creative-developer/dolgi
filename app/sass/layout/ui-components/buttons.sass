@@ -1,15 +1,20 @@
 ////////// Default btn
 .btn
 	position: relative
-	display: inline-block
-	font-size: 14px
-	border-radius: 4px
-	color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 600
+	font-size: 15px
+	line-height: 15px
+	color: $c1
 	text-align: center
 	text-decoration: none
-	padding: 10px 30px
-	background-color: $c1
+	padding: 17.5px 30px
+	width: 100%
+	background-color: $btnColor
 	border: none
+	border-radius: 5px
 	outline: none
 	transition: all .3s ease
 	user-select: none
@@ -17,14 +22,24 @@
 	&:hover:not(.disabled)
 		outline: none
 		cursor: pointer
-		color: #fff
 		text-decoration: none
-		background-color: lighten($c1, 10%)
+		background-color: #FFE033
 	&:active:not(.disabled)
-		background-color: darken($c1, 5%)
-
+		background-color: #F4D005
 	&.disabled
 		opacity: .4
+
+	&__text
+		margin-right: 9px
+
+	&__icon-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		svg
+			fill: $c0
+			width: 15px
+			height: 9px
 
 .trs-btn
 	position: relative

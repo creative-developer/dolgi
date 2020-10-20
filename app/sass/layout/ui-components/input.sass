@@ -4,16 +4,44 @@
 input,
 textarea
 	width: 100%
-	font-size: 16px
-	color: $c0
-	padding: 5px 10px
-	border: 1px solid #999
+	font-size: 15px
+	line-height: 15px
+	color: $c2
+	padding: 15px 17px
+	border-radius: 5px
+	border: 1px solid $bdColor
 	transition: all .3s ease
+	&:hover
+		border-color: #A1AEC4
 	&:focus
 		outline: none
-		border-color: $c1
+		color: $c2
 	&:disabled
 		background: #fff
+	&.valid
+		color: $c2
+		border-color: #9ED8C4
+		background: #FCFFFE
+	&.error
+		color: $c2
+		border-color: $warningColor
+		background: #fff
+label
+	width: 100%
 
 ::placeholder
-	color: #999
+	color: #BABABA
+
+.input
+	&:not(:last-child)
+		margin-bottom: 19px
+
+	&__label
+
+	&__text
+		display: inline-block
+		font-size: 15px
+		line-height: 18px
+		color: $c0
+		margin-bottom: 10px
+	&__input
