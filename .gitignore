@@ -22,3 +22,6 @@ materials/
 
 #Mac os DS_Store
 .DS_Store
+
+#vscode settings file
+.vscode/

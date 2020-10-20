@@ -1,0 +1,44 @@
+.pagination
+  user-select: none
+
+  &__list
+    display: flex
+
+  &__item
+    &:not(:last-child)
+      .pagination__link
+        border-right: none
+    &:first-child
+      .pagination__link
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+    &:last-child
+      .pagination__link
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+
+    &:hover:not(&--disabled):not(&--seperator)
+      .pagination__link
+        color: $c0
+        background-color: #c8d7f0
+
+    &--disabled
+      .pagination__link
+        color: #E5E5E5
+        .icon
+          fill: #E5E5E5
+
+  &__link
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 47px
+    height: 48px
+    font-size: 13px
+    line-height: 24px
+    color: $c0
+    border: 1px solid $bdColor
+    .icon
+      width: 4px
+      height: 9px
+      fill: $c0

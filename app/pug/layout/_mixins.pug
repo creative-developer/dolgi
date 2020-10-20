@@ -43,3 +43,42 @@ mixin news-card(img, date, title, mod)
 			._published-on= date
 			._title= title
 			._more-link.lined-link Читать подробнее
+
+
+//- Pagination
+mixin pagination(length)
+	- var n = 1;
+	.b-pagination
+		ul._list
+			if length > 7
+				li._item.-disabled
+					span._link
+						+icon('angle-left')
+				li._item
+					a(href="/")._link 1
+				li._item
+					a(href="/")._link 2
+				li._item
+					a(href="/")._link 3
+				li._item.-seperator
+					span._link ...
+				li._item
+					a(href="/")._link 8
+				li._item
+					a(href="/")._link 9
+				li._item
+					a(href="/")._link 10
+				li._item
+					a(href="/")._link
+						+icon('angle-right')
+
+			else
+				li._item
+					a(href="/")._link.-disabled
+						+icon('angle-left')
+				while n <= length
+					li._item
+						a(href="/")._link= n++
+				li._item
+					a(href="/")._link
+						+icon('angle-right')
