@@ -1,0 +1,28 @@
+.news-contents
+  margin-bottom: 50px
+  &__title
+    font-size: 17px
+    line-height: 17px
+    font-weight: 500
+    color: $c1
+    margin-bottom: 18px
+
+  &__list
+  &__item
+  &__link
+    position: relative
+    display: inline-flex
+    font-size: 15px
+    line-height: 30px
+    font-weight: 500
+    color: $accentLighten
+    padding-left: 13px
+    text-decoration: underline
+    &::before
+      content: '-'
+      position: absolute
+      top: 0
+      left: 0
+    &:hover
+      color: $accentLighten
+      text-decoration: none

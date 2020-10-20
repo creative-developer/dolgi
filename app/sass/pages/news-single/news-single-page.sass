@@ -1,0 +1,78 @@
+.news-single-page
+  padding-top: 17px
+  padding-bottom: 50px
+
+  &__title
+    margin-bottom: 18px
+
+  &__news-info
+    display: flex
+    align-items: center
+    font-size: 15px
+    line-height: 15px
+    margin-bottom: 60px
+    & > div
+      &:first-child
+        padding-right: 13px
+      &:not(:first-child)
+        position: relative
+        padding: 0 10px
+      &:not(:first-child):not(:nth-child(2))
+        &::before
+          content: '.'
+          position: absolute
+          top: -5px
+          left: -2px
+
+  &__category
+  &__category-link
+  &__published-on
+
+  &__viewed-count
+    .icon
+      width: 16px
+      height: 12px
+    span
+  &__read-time
+    .icon
+      width: 12px
+      height: 12px
+    span
+
+  .icon
+    fill: #D4D7DC
+    margin-right: 10px
+
+  &__preview
+    margin-bottom: 49px
+    img
+
+  &__content
+    font-size: 15px
+    line-height: 22px
+    color: $c1
+    padding-right: 53px
+
+    p
+      margin-bottom: 22px
+
+    h2
+    h3
+      font-size: 21px
+      line-height: 28px
+      font-weight: 600
+      margin: 50px 0 30px
+
+    ul
+      margin-bottom: 30px
+
+    li
+      position: relative
+      padding-left: 20px
+      margin-bottom: 20px
+      color: #5f6061
+      &::before
+        content: '•'
+        position: absolute
+        top: 0
+        left: 0
