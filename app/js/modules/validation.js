@@ -29,6 +29,25 @@ jQuery.validator.setDefaults({
       required: true,
       phone: true,
     },
+    name: {
+      required: true,
+      minlength: 2,
+      cyryllic: true,
+    },
+    middlename: {
+      required: true,
+      minlength: 2,
+      cyryllic: true,
+    },
+    surname: {
+      required: true,
+      minlength: 2,
+      cyryllic: true,
+    },
+    inn: {
+      required: true,
+      inn: true,
+    },
     pay_method: {
       required: true,
     },
@@ -60,8 +79,16 @@ $.validator.addMethod('birthDate', function (value, element) {
   return this.optional(element) || /^[0-9\.]{10}?$/.test(value)
 })
 
+$.validator.addMethod('cyryllic', function (value, element) {
+  return this.optional(element) || /^[а-я\s?-\s?А-Я]*\s?\s?$/.test(value)
+})
+
 $.validator.addMethod('passportSeries', function (value, element) {
   return this.optional(element) || /^[0-9\s]{11,12}?$/.test(value)
+})
+
+$.validator.addMethod('inn', function (value, element) {
+  return this.optional(element) || /^[0-9]{12}?$/.test(value)
 })
 
 $.validator.addMethod('phone', function (value, element) {

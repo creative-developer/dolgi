@@ -26,7 +26,8 @@ body
 	+sm
 
 .section
-	padding: 61px 0 59px
+	position: relative
+	padding: 17px 0 59px
 	background: #FFFFFF
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
 
@@ -34,12 +35,26 @@ body
 	margin: 0 -10px
 	display: flex
 	&:not(:last-child)
-		margin-bottom: 24px
+		margin-bottom: 23px
+	&--end
+		align-items: flex-end
 
 .input-col
 	padding: 0 10px
 	flex-basis: 50%
 	max-width: 50%
 
-.form
+.main-form
 	margin-top: -5px
+
+.main-col
+	padding: 0 $gridPadding
+	&--left
+		flex-basis: 63.7%
+		max-width: 63.7%
+		padding-right: 50px
+
+	&--right
+		flex-basis: 36.3%
+		max-width: 36.3%
+		padding-left: 50px

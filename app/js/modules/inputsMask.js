@@ -3,4 +3,5 @@ export const inputsMaskInit = () => {
   $('input[name="phone"]').inputmask('+7 (999) 999-99-99')
   $('input[name="birthDate"]').inputmask('99.99.9999')
   $('input[name="passportSeries"]').inputmask('99 99 999999')
+  $('input[name="inn"]').inputmask('999999999999')
 }

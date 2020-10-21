@@ -1,0 +1,92 @@
+section.b-debt.section
+	.container
+		.row
+			.col-8
+				h1._title.main-title Узнать задолженность<br> по налогам по ИНН онлайн
+				._desc.md-desc.main-desc Чтобы узнать свой налог на имущество, транспортное средство и другие налоги физического лица, выполните проверку через официальный сервис <a href="#" class="accent-link"> Dolgi.net.</a> <br>Поверка налоговых задолженностей гражданина России производится по ИНН физического лица через официальный запрос в Федеральную налоговую службу.
+			.col-4
+				.b-main-logo
+					._img-wrap
+						img._img(src="img/logo/ns-big-logo.png" alt="")
+					._text Источник информации является реестр должников судебных приставов
+		.row
+			.main-col.main-col--left
+				form.b-main-form._form
+					._fields
+						.b-input
+							span._text Введите ваш ИНН
+							input._input(type="text" name="inn" placeholder="563565286576")
+					.input-row
+						.input-col
+							button.b-btn._btn.get-inn-btn
+								span._text Найти задолженность
+								span._icon-wrap
+									+icon('arrow-right')
+						.input-col
+							.b-agreement-text Нажимая на кнопку, Вы соглашаетесь с правилами пользования сайта и
+								a._link(href="#") обработки персональных данных
+				.b-get-inn
+					a._link(href="#" data-hidden-text="Свернуть" data-show-text="Узнать свой ИНН")
+						span._icon-wrap
+							+icon('warning')
+						span._link-text Узнать свой ИНН
+					._text Нажмите сюда если вы не знаете свой ИНН
+					form._form.disabled
+						._wrap
+							.input-row
+								.input-col
+									.b-input.-birth-date
+										span._text Фамилия
+										input(type='text' name='surname' placeholder='Иванов')
+								.input-col
+									.b-input.-birth-date
+										span._text Имя
+										input(type='text' name='name' placeholder='Иван')
+							.input-row
+								.input-col
+									.b-input
+										span._text Отчество
+										input(type='text' name='middlename' placeholder='Иванович')
+								.input-col
+									.b-input.-birth-date
+										span._text Дата рождения
+										input(type='text' name='birthDate' placeholder='01.01.1985' data-toggle='datepicker' autocomplete='off')
+							.input-row.input-row--end
+								.input-col
+									button.b-btn._btn
+										span._text Узнать ИНН
+								.input-col
+									.b-select-wrap._select
+										span._text Регион
+										select(name="region" data-placeholder="Выберите регион" data-search-not-found="Совпадений не найдено")
+											option
+											option Алтайский край
+											option Архангельская область и Ненецкий автономный округ
+											option Белгородская область
+											option Забайкальский край
+											option Калужская область
+
+						.b-agreement
+							label.b-checkbox
+								input(type="checkbox" name="agreement" required checked)
+								span._icon-wrap
+									+icon('check')
+								span._text Я согласен на обработку моих <a href="agreement.html" class="accent-link">персональных данных</a> для получения ИНН
+
+
+
+			.main-col.main-col--right
+				.b-debt-desk
+					ul._list
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/hands.svg" alt="")
+							._text Проверить наличие задолженности по фамилии
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/credit-card.svg" alt="")
+							._text Погасите задолженность онлайн любым удобным способом
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/checklist.svg" alt="")
+							._text Получите квитанцию <br>об оплате на почту

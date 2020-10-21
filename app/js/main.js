@@ -8,6 +8,7 @@ import { validationInit } from './modules/validation'
 import { slider } from './modules/sliders'
 import { smoothScroll } from './modules/smoothScroll'
 import { smartScrollingInit } from './modules/smartScrolling'
+import { innToggleInit } from './modules/innToggle'
 
 // initFunctions
 mediaQueries()
@@ -20,3 +21,4 @@ validationInit()
 slider()
 smoothScroll()
 smartScrollingInit()
+innToggleInit()

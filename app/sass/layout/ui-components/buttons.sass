@@ -26,16 +26,20 @@
 		background-color: #FFE033
 	&:active:not(.disabled)
 		background-color: #F4D005
+	&:disabled
+		background: #F2F2F2 !important
+		pointer-events: none
 	&.disabled
-		opacity: .4
+		background: #F2F2F2
+		pointer-events: none
 
 	&__text
-		margin-right: 9px
 
 	&__icon-wrap
 		display: flex
 		align-items: center
 		justify-content: center
+		margin-left: 9px
 		svg
 			fill: $c0
 			width: 15px

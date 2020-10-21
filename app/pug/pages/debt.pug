@@ -1,0 +1,17 @@
+extend ../layout/template
+
+block head
+	- var title = 'Главная | Узнать задолженность по налогам по ИНН онлайн'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/debt', title: 'Узнать задолженность по налогам по ИНН онлайн' }
+	])
+	main.debt-page
+		// Sections
+		include ./debt/main
+		include ./index/news-section
+		include ./index/services-section
+		include ./index/faq
