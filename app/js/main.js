@@ -10,6 +10,7 @@ import { smoothScroll } from "./modules/smoothScroll";
 import { smartScrollingInit } from "./modules/smartScrolling";
 import { innToggleInit } from "./modules/innToggle";
 import { debtCheckFormPos } from "./modules/debtCheckFormPos";
+import { checkTravelBanSteps } from "./modules/checkTravelBanSteps";
 
 // initFunctions
 mediaQueries();
@@ -24,3 +25,4 @@ smoothScroll();
 smartScrollingInit();
 innToggleInit();
 debtCheckFormPos();
+checkTravelBanSteps();
