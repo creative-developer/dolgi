@@ -1,0 +1,16 @@
+extend ../layout/template
+
+block head
+	- var title = 'Главная | Новый поиск задолжностей'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/debt-checker', title: 'Новый поиск задолжностей' }
+	])
+	main.debt-page
+		// Sections
+		include ./debt-checker/main
+		include ./index/services-section
+		include ./index/faq

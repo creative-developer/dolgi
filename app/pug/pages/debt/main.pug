@@ -35,11 +35,11 @@ section.b-debt.section
 						._wrap
 							.input-row
 								.input-col
-									.b-input.-birth-date
+									.b-input
 										span._text Фамилия
 										input(type='text' name='surname' placeholder='Иванов')
 								.input-col
-									.b-input.-birth-date
+									.b-input
 										span._text Имя
 										input(type='text' name='name' placeholder='Иван')
 							.input-row
@@ -48,9 +48,7 @@ section.b-debt.section
 										span._text Отчество
 										input(type='text' name='middlename' placeholder='Иванович')
 								.input-col
-									.b-input.-birth-date
-										span._text Дата рождения
-										input(type='text' name='birthDate' placeholder='01.01.1985' data-toggle='datepicker' autocomplete='off')
+									+birth-date-input
 							.input-row.input-row--end
 								.input-col
 									button.b-btn._btn

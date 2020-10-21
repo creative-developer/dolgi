@@ -17,9 +17,7 @@ section.b-main.section
 						input._input(type="text" name="fullname" placeholder="Иванов Иванович Иван")
 					.input-row
 						.input-col
-							.b-input.-birth-date
-								span._text Дата рождения
-								input(type='text' name='birthDate' placeholder='01.01.1985' data-toggle='datepicker' autocomplete='off')
+							+birth-date-input
 						.input-col
 							.b-select-wrap._select
 								span._text Ваш регион

@@ -40,4 +40,9 @@ export const datePickerInit = () => {
         validator.element('input[name="birthDate"]')
       }, 100)
     })
+
+  $('.input__icon-wrap').on('click', function (e) {
+    e.stopPropagation()
+    $(this).siblings().focus()
+  })
 }

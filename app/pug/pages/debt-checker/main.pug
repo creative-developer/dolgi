@@ -1,0 +1,37 @@
+section.b-debt-checker.section
+	.container
+		.row
+			.col-8
+				h1._title.main-title Новый поиск задолжностей
+				._desc.md-desc.main-desc Физические лица могут узнать ИНН по паспорту бесплатно - для этого введите ниже Фамилию Имя и Отчество, дату рождения и серию и номер паспорта. Далее вы узнаете свой ИНН и сможете проверить задолженность по налогам ФНС или судебным приставам ФССП.
+				form.b-main-form._form
+					.b-input
+						span._text Ваше ФИО
+						input._input(type="text" name="fullname" placeholder="Иванов Иванович Иван")
+					.input-row
+						.input-col
+							+birth-date-input
+						.input-col
+							.b-select-wrap._select
+								span._text Ваш регион
+								select(name="region" data-placeholder="Выберите регион" data-search-not-found="Совпадений не найдено")
+									option
+									option Алтайский край
+									option Архангельская область и Ненецкий автономный округ
+									option Белгородская область
+									option Забайкальский край
+									option Калужская область
+					.input-row
+						.input-col
+							button.b-btn._btn
+								span._text Найти
+								span._icon-wrap
+									+icon('arrow-right')
+						.input-col
+							.b-agreement-text Нажимая на кнопку, Вы соглашаетесь с правилами пользования сайта и
+								a._link(href="#") обработки персональных данных
+			.col-4
+				.b-main-logo
+					._img-wrap
+						img._img(src="img/logo/ns-big-logo.png" alt="")
+					._text Официальный сайт налоговой службы<br> ФНС - налогу.ру является источником информации
