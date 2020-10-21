@@ -5,14 +5,12 @@
 		font-weight: $weight
 		font-style: $style
 
-		@if $asset-pipeline == true 
+		@if $asset-pipeline == true
 			src: font-url('#{$file-path}.eot')
 			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
 		@else
 			src: url('#{$file-path}.eot')
 			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
-
-
 
 // Horizontal gradient - from left to right
 =gradient_x($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%)
@@ -24,14 +22,26 @@
 	background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent)
 	background-repeat: repeat-x
 
-
+=line
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		max-width: 1140px
+		height: 1px
+		background: #D2D8E3
+		+lg
+			width: 10px
 
 // Media queries
 // max-width
 =xxxl
 	@media only screen and (max-width: $xxxl - 1)
 		@content
-		
+
 =xxl
 	@media only screen and (max-width: $xxl - 1)
 		@content
@@ -55,7 +65,6 @@
 =xsm
 	@media only screen and (max-width: $xsm - 1)
 		@content
-
 
 // min-width
 =min_xxxl
@@ -81,8 +90,6 @@
 =min_sm
 	@media only screen and (min-width: $sm)
 		@content
-
-
 
 // Media queries
 // max-height
