@@ -1,0 +1,76 @@
+extend ../layout/template
+
+block head
+	- var title = 'Проверить запрет на выезд за границу онлайн'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/', title: 'Проверить запрет на выезд за границу онлайн' }
+	])
+
+	main.b-check-travel-ban-page
+		.container
+			.row
+				.col-12
+					h1._title Проверить запрет на выезд за границу онлайн
+					._desc Для того, чтобы проверить есть ли запрет на выезд за границу, требуется отправить запрос и указать свои данные в форме ниже. Онлайн сервис проведет проверку по базам ФССП, ФТС, ФНС, НБКИ и кредитных организаций для выявления возможных ограничений на выезд из страны.
+
+			.row._form-row
+				._left-col
+					form.b-check-travel-ban-form
+						._header
+							._title-wrap
+								span._step-number 1
+								h3._title Персональные данные
+							._steps-counter Шаг <span>1</span>/3
+							._progress
+								._progress-line
+
+						._body
+							._steps.owl-carousel
+								._step.-first
+									.input-row
+										.input-col
+											.b-input
+												span._text ФИО полностью
+												input._input(type="text" name="fullname" placeholder="Иванов Иванович Иван")
+										.input-col
+											.b-select-wrap._select
+												span._text Выбирите регион
+												select(name="region" data-placeholder="Выберите регион" data-search-not-found="Совпадений не найдено")
+													option
+													option Алтайский край
+													option Архангельская область и Ненецкий автономный округ
+													option Белгородская область
+													option Забайкальский край
+													option Калужская область
+									.input-row
+										.input-col
+											+birth-date-input()
+										.input-col
+											.b-input.-with-icon
+												span._text Серия номера паспорта
+												._input-wrap
+													input._input(type="text" name="passportSeries" placeholder="Иванов Иванович Иван")
+													._icon-wrap
+														+icon('passport')
+									.input-row
+										.input-col
+											.b-agreement-text Нажимая на кнопку, Вы соглашаетесь с правилами пользования сайта и
+												a._link(href="#") обработки персональных данных
+										.input-col
+											button.b-btn._btn
+												span._text Далее перейти к  Шаг 2/3 >
+
+				._right-col
+					._source_card
+						._logo-list
+							img(src="img/check-travel-ban/logo1.png" alt="")
+							img(src="img/check-travel-ban/logo2.png" alt="")
+							img(src="img/check-travel-ban/logo3.png" alt="")
+							img(src="img/check-travel-ban/logo4.png" alt="")
+							img(src="img/check-travel-ban/logo5.png" alt="")
+
+						._desc Проверка запреты выезда за границу производится, так как судебный пристав-исполнитель в соответствии со ст. 67 ФЗ от 02.10.2007 № 229-ФЗ «Об исполнительном производстве» вправе по заявлению взыскателя или собственной инициативе вынести постановление о временном ограничении на выезд должника из Российской Федерации.

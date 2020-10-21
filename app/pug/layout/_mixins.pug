@@ -82,8 +82,10 @@ mixin pagination(length)
 				li._item
 					a(href="/")._link
 						+icon('angle-right')
+
+
 mixin birth-date-input
-	.b-input.-birth-date
+	.b-input.-with-icon
 		._text Дата рождения
 		._input-wrap
 			input(type='text' name='birthDate' placeholder='01.01.1985' data-toggle='datepicker' autocomplete='off')
