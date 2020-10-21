@@ -1,7 +1,76 @@
 .footer
+
 	&__top-line
 		background: $accentLighten
 		padding: 50px 0 82px
+
+	&__row
+		justify-content: space-between
+
+	&__col
+		padding: 0 $gridPadding
+		&--first
+			flex-basis: 34.27%
+			max-width: 34.27%
+		&--second
+			flex-basis: 65.73%
+			max-width: 65.73%
+
 	&__bottom-line
 		background: $accent
 		padding: 12px 0
+
+	&__title
+		font-weight: 600
+		font-size: 17px
+		line-height: 17px
+		color: #FFFFFF
+		margin-bottom: 29px
+		&.mb-20
+			margin-bottom: 20px
+
+	&__big-link
+		font-weight: 500
+		font-size: 15px
+		line-height: 26px
+		color: #FFFFFF
+		&:hover
+			color: rgba(#fff, 0.8)
+
+	&__links-wrap
+		display: flex
+		flex-direction: column
+		margin-bottom: 36px
+
+	&__text
+		font-size: 13px
+		line-height: 26px
+		color: #fff
+
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__politics-wrap
+		display: flex
+		align-items: center
+
+	&__icon-wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		svg
+			fill: #fff
+			width: 96px
+			height: 16px
+
+	&__link
+		font-weight: normal
+		font-size: 13px
+		line-height: 26px
+		color: #fff
+		&:hover
+			color: rgba(#fff, 0.8)
+		&:not(:last-child)
+			margin-right: 37px

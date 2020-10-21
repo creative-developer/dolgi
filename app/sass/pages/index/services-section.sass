@@ -52,10 +52,22 @@
 			background: #fff !important
 			border-radius: 50%
 			border: 1px solid $bdColor !important
+			transition: all 0.3s ease
+			&:hover
+				background: $accentLighten !important
+				border-color: $accentLighten !important
+				svg
+					fill: #fff
+			&:active
+				background: darken($accentLighten, 5%) !important
+				border-color: darken($accentLighten, 5%) !important
+				svg
+					fill: #fff
 			svg
 				fill: #5F6061
 				width: 11px
 				height: 13px
+				transition: all 0.3s ease
 			&:focus
 				outline: none
 		&-prev

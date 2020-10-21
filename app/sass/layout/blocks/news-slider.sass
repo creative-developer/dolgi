@@ -19,10 +19,16 @@
 			height: 30px
 			background: #D3DBDB !important
 			border-radius: 50%
+			transition: all 0.3s ease
+			&:hover
+				background: rgba(#D3DBDB, 0.5) !important
+			&:active
+				background: $accentLighten !important
 			svg
 				fill: #fff
 				width: 6px
 				height: 10px
+				transition: all 0.3s ease
 			&:focus
 				outline: none
 		&-prev

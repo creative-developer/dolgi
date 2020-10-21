@@ -50,18 +50,22 @@
 		padding: 14.5px 22px
 		max-width: 130px
 		&:hover
-			color: $accentLighten
-			background: rgba(#C0DFD9, 0.3)
-			.services-card__link-icon-wrap
-				transform: translateX(2px)
+			color: $accent
+			background: rgba(#C0DFD9, 0.4)
+		&:active
+			color: #fff
+			background: $accentLighten
+			svg
+				fill: #fff
+
 		&-text
 			margin-right: 6px
 		&-icon-wrap
 			display: flex
 			align-items: center
 			margin-top: 1px
-			transition: all 0.3s ease
 			svg
 				width: 9px
 				height: 8px
 				fill: #BABABA
+				transition: all 0.3s ease
