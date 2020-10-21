@@ -5,5 +5,63 @@ section.b-debt-payment
 				h2._title Виберите несколько задолжностей, чтобы погасить их одновременно
 				._desc
 					p Запись в Банке данных будет удалена или изменена (в случае частичного погашения задолженности) в течение 3 – 7 дней с момента оплаты, так как денежные средства должны поступить на депозитный счет отдела судебных приставов, распределены, перечислены взыскателю.
+		.row
+			.col-8
+				.b-choose-btn._choose-btn
+					._text Данные ФССП актуальные на дату 24.10.2020
+					label.b-checkbox
+						input(type="checkbox" name="choose-all")
+						span._icon-wrap
+							+icon('check')
+						span._text Выбрать все
+				.b-debt-table._debt-table
+					._header
+						._title-wrap
+							._title Должник
+							._name РУДАКОВ ДМИТРИЙ СЕРГЕЕВИЧ 21.03.1984 ВОРОНЕЖСКАЯ ОБЛ
+						label.b-checkbox._checkbox.-small
+							input(type="checkbox" name="choose-all")
+							span._icon-wrap
+								+icon('check')
+							span._text Выбрать
+					._body
+						._tr
+							._td.-title Номер и дата испол. производства:
+							._td.-value 34909917268810271803382651
+						._tr
+							._td.-title Реквизиты испол. документа:
+							._td.-value Акт по делу об административном правонарушении от 26.06.2018 № 4-464/18 СУДЕБНЫЙ УЧАСТОК № 5 В ЦЕНТРАЛЬНОМ СУДЕБНОМ РАЙОНЕ ВОРОНЕЖСКОЙ ОБЛАСТИ
+						._tr
+							._td.-title Отдел судебных приставов:
+							._td.-value Бутурлиновский РОСП 397507, Россия, Воронежская обл., , г. Бутурлиновка, , ул. Попкова, д. 11,
+						._tr
+							._td.-title Пристав-исполнитель:
+							._td.-value ХРИСТЕНКО О. А. +74736121033, +7(47361)2-10-33
+						._tr
+							._td.-title Предмет исполнения:
+							._td.-value Штраф как вид наказания по делам об АП, назначенный судом (за исключением дел по протоколам ФССП)
+						._tr
+							._td.-title.-price-title Сумма задолженности
+							._td.-price 2 981.39 руб.
+
 				include ../../layout/modules/warning-banner
 			.col-4
+				.b-info-card._info-card
+					._top-line
+						._icon-wrap
+							img._icon(src="img/icons/paper.svg" alt="")
+						h3._title Результаты <br>по данным ФССП
+					._center-line
+						ul.b-table-list.-price.-smallest
+							li._item
+								._text.-title Всего выезд запрещён для:
+								._text.-value 1 124 274 гр-н
+							li._item
+								._text.-title Всего имеют задолженность:
+								._text.-value более 34 млн. гр-н
+							li._item
+								._text.-title Общие долги по кредитам:
+								._text.-value 3 938 003 руб.
+							li._item
+								._text.-title Открытых дел по взысканию:
+								._text.-value более 11 трлн. руб.

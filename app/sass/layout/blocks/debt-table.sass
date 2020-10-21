@@ -1,0 +1,76 @@
+.debt-table
+	background: #fff
+	border-radius: 5px
+	border: 1px solid $bdColor
+
+	&__header
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		background: #fff
+		border-radius: 5px
+		border: 1px solid $bdColor
+		padding: 20px 25px 18px 30px
+		margin: -1px -1px 0 -1px
+
+	&__body
+		padding: 30px 30px 16px
+
+	&__title-wrap
+		display: flex
+		align-items: flex-start
+		max-width: 450px
+
+	&__title
+		font-weight: 500
+		font-size: 15px
+		line-height: 18px
+		color: $c1
+		margin-right: 20px
+
+	&__name
+		font-weight: 600
+		font-size: 15px
+		line-height: 18px
+		color: $accentLighten
+
+	&__checkbox
+		width: auto
+
+	&__tr
+		display: flex
+		align-items: flex-start
+		border-radius: 5px
+		padding: 11.3px 30px 11.3px 15px
+		&:nth-child(odd)
+			background: rgba(#F2F5F4, 0.5)
+		&:last-child
+			background: #fff
+
+	&__td
+		&:first-child
+			flex-basis: 43.3%
+			max-width: 43.3%
+		&:last-child
+			flex-basis: 55.7%
+			max-width: 55.7%
+
+		&--title
+			font-size: 13px
+			line-height: 20px
+			color: $c1
+
+		&--value
+			font-weight: 500
+			font-size: 13px
+			line-height: 20px
+			color: $c1
+
+		&--price-title
+			font-weight: 600
+
+		&--price
+			font-weight: bold
+			font-size: 15px
+			line-height: 20px
+			color: $warningColor
