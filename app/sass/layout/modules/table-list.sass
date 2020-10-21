@@ -3,7 +3,15 @@
 		.table-list
 			&__text
 				&--value
-					color: $accent
+					color: $accentLighten
+	&--smallest
+		.table-list
+			&__item
+				align-items: flex-start
+				padding: 11px 10px
+			&__text
+				line-height: 18px
+
 	&__item
 		display: flex
 		align-items: center
@@ -18,5 +26,7 @@
 		line-height: 13px
 		&--title
 			color: $c1
+			margin-right: 5px
 		&--value
 			font-weight: 500
+			white-space: nowrap
