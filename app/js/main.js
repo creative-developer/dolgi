@@ -6,6 +6,8 @@ import { datePickerInit } from './modules/datePicker'
 import { customSelectInit } from './modules/select'
 import { validationInit } from './modules/validation'
 import { slider } from './modules/sliders'
+import { smoothScroll } from './modules/smoothScroll'
+import { smartScrollingInit } from './modules/smartScrolling'
 
 // initFunctions
 mediaQueries()
@@ -16,3 +18,5 @@ datePickerInit()
 customSelectInit()
 validationInit()
 slider()
+smoothScroll()
+smartScrollingInit()

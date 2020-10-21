@@ -1,0 +1,27 @@
+.dotted-list
+	padding-left: 41px
+	&--small
+		.dotted-list
+			&__item
+				&:after
+					top: 50%
+					transform: translateY(-50%)
+	&--big
+		.dotted-list
+			&__item
+				&:not(:last-child)
+					margin-bottom: 15px
+	&__item
+		position: relative
+		font-size: 13px
+		line-height: 20px
+		color: $c2
+		&:after
+			content: ''
+			position: absolute
+			top: 9px
+			left: -10px
+			width: 3px
+			height: 3px
+			background: $c2
+			border-radius: 50%

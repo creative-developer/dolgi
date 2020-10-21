@@ -1,0 +1,27 @@
+.faq-nav
+	max-width: 360px
+	&.scrolled
+		position: fixed
+		top: 20px
+	&__list
+		border-radius: 3px
+		background: #FFFFFF
+		border: 1px solid $bdColor
+		padding: 10px 30px 1px
+
+	&__item
+		padding: 19.3px 0
+		&:not(:last-child)
+			border-bottom: 1px solid #D9E3F5
+
+	&__link
+		display: inline-block
+		font-size: 15px
+		line-height: 25px
+		color: $c1
+		&:hover
+			color: $accent
+
+	&__number
+		color: $accentLighten
+		margin-right: 6px
