@@ -8,9 +8,18 @@
 		.table-list
 			&__item
 				align-items: flex-start
-				padding: 11px 10px
+				padding: 8px 10px 8px
+				&:not(:last-child)
+					margin-bottom: 8.5px
 			&__text
 				line-height: 18px
+				white-space: normal
+				&--title
+					flex-basis: 43%
+					max-width: 43%
+				&--value
+					flex-basis: 57%
+					max-width: 57%
 
 	&__item
 		display: flex

@@ -15,6 +15,14 @@
 		border-radius: 8px
 		background: #91E0C5
 
+	&--fix-table
+		padding: 40px 30px 40px
+		.info-card
+			&__bottom-line
+				flex-direction: column
+				align-items: stretch
+				margin-top: 34px
+
 	&__top-line
 		display: flex
 		align-items: center
@@ -53,3 +61,23 @@
 		font-size: 11px
 		line-height: 13px
 		color: $c2
+
+	&__info-list
+		margin-bottom: 20px
+
+	&__item
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__text
+		line-height: 20px
+		color: $c1
+		padding: 0 8px
+		&--title
+			font-weight: 500
+			font-size: 13px
+		&--value
+			font-weight: 600
+			font-size: 15px
+			text-align: right
