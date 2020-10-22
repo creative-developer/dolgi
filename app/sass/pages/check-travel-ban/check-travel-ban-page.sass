@@ -1,6 +1,6 @@
 .check-travel-ban-page
   padding-top: 17px
-  padding-bottom: 100px
+  padding-bottom: 43px
 
   &__title
     margin-bottom: 28px
@@ -15,6 +15,42 @@
   &__left-col
     +make-col-ready()
     +make-col(8.5)
+
   &__right-col
     +make-col-ready()
     +make-col(3.5)
+
+// .source-card
+.source-card
+  padding: 19px 20px 29px
+  border: 1px solid #CAD2DF
+  box-sizing: border-box
+  border-radius: 5px
+
+  &__title
+    font-size: 13px
+    line-height: 16px
+    text-align: center
+    color: #2B2B2B
+    margin-bottom: 20px
+
+  &__logo-list
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+    opacity: 0.5
+    img
+
+  &__divider
+    width: 90%
+    height: 1px
+    opacity: 0.5
+    margin: 19px auto
+    border: 1px solid #CAD2DF
+
+  &__desc
+    font-size: 11px
+    line-height: 16px
+    text-align: center
+    color: #BABABA

@@ -23,7 +23,10 @@ block content
 						._header
 							._title-wrap
 								span._step-number 1
-								h3._title Персональные данные
+								h3._title
+									span.show Персональные данные
+									span Дополнительная информация
+									span Результаты проверки
 							._steps-counter Шаг <span>1</span>/3
 							._progress
 								._progress-line
@@ -61,16 +64,110 @@ block content
 											.b-agreement-text Нажимая на кнопку, Вы соглашаетесь с правилами пользования сайта и
 												a._link(href="#") обработки персональных данных
 										.input-col
-											button.b-btn._btn
+											button(type="button").b-btn._btn.js-next-step
 												span._text Далее перейти к  Шаг 2/3 >
 
-				._right-col
-					._source_card
-						._logo-list
-							img(src="img/check-travel-ban/logo1.png" alt="")
-							img(src="img/check-travel-ban/logo2.png" alt="")
-							img(src="img/check-travel-ban/logo3.png" alt="")
-							img(src="img/check-travel-ban/logo4.png" alt="")
-							img(src="img/check-travel-ban/logo5.png" alt="")
+								._step.-second
+									._content
+										.b-input
+											span._text Введите ваш ИНН
+											input._input(type="text" name="inn" placeholder="563565286576")
 
+										label.b-checkbox.-small._checkbox
+											input(type="checkbox" name="IHaveCar")
+											span._icon-wrap
+												+icon('check')
+											span._text У меня есть автомобиль - проверить штрафы ГИБДД
+
+									.input-row.i-have-car-form
+										.input-col
+											.b-input
+												span._text Водител. удостоверение
+												input._input(type="text" name="driverCert")
+										.input-col
+											.b-input
+												span._text Гос. знак:
+												input._input(type="text" name="stateSign")
+										.input-col
+											.b-input
+												span._text Св-во ТС:
+												input._input(type="text" name="vehicleCertificate")
+
+									.input-row._buttons-row
+										.input-col
+											button(type="button").b-btn._step-btn.js-prev-step
+												span._icon-wrap
+													+icon('arrow-left')
+												span._text Предыдущий шаг
+
+										.input-col
+											button(type="button").b-btn._btn.js-next-step
+												span._text Далее перейти к  Шаг 3/3 >
+
+								._step.-third
+									.b-ban-check-items
+										._col
+											._item
+												._icon
+													img(src="img/check-travel-ban/logo1.png" alt="")
+												._text Проверка паспорта по базе МВД
+											._item
+												._icon
+													img(src="img/check-travel-ban/logo2.png" alt="")
+												._text Проверка задолженностей по базе ФССП
+											._item
+												._icon
+													+icon('check-circle')
+												._text Проверка в реестре розыска по исполнительным производствам
+										._col
+											._item
+												._icon
+													+icon('check-circle')
+												._text Проверка в реестре совершенных преступлений
+											._item
+												._icon
+													+icon('check-circle')
+												._text Проверка по базе судебных делопроизводств
+											._item
+												._icon
+													+icon('check-circle')
+												._text Итого: результат проверки запрета
+
+									.b-input
+										span._text Введите E-mail для получения отчета:
+										input._input(type="email" name="email" placeholder="name@mail.ru")
+
+									label.b-checkbox.-small._checkbox
+										input(type="checkbox" name="sendSms")
+										span._icon-wrap
+											+icon('check')
+										span._text Выслать бесплатное SMS, когда поступит ответ
+
+									.input-row.send-sms-form
+										.input-col
+											.b-input
+												input._input(type="tel" name="phone" placeholder="+7")
+
+									._sms-price Стоимость запроса, согласно тарифам: 199 руб
+
+									.input-row._buttons-row
+										.input-col
+											button(type="button").b-btn._step-btn.js-prev-step
+												span._icon-wrap
+													+icon('arrow-left')
+												span._text Предыдущий шаг
+
+										.input-col
+											button(type="button").b-btn._btn.js-next-step
+												span._text Оплатить
+
+				._right-col
+					.b-source-card
+						._title Источник
+						._logo-list
+							img(src="img/check-travel-ban/source-logos.png" alt="")
+						._divider
 						._desc Проверка запреты выезда за границу производится, так как судебный пристав-исполнитель в соответствии со ст. 67 ФЗ от 02.10.2007 № 229-ФЗ «Об исполнительном производстве» вправе по заявлению взыскателя или собственной инициативе вынести постановление о временном ограничении на выезд должника из Российской Федерации.
+
+	include ./debt-checker/reasons-ban
+	include ./index/faq

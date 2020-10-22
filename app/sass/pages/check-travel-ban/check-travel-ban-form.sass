@@ -32,8 +32,13 @@
     border-radius: 50%
     margin-right: 15px
     background-color: $accentLighten
+
   &__title
     margin-bottom: 2px
+    span
+      display: none
+      &.show
+        display: block
 
   &__steps-counter
     font-size: 13px
@@ -46,19 +51,127 @@
     height: 4px
     background: #EAEFED
     border-radius: 5px
-    margin-bottom: 50px
+
   &__progress-line
     position: absolute
     top: 0
     left: 0
-    width: 40%
+    width: 0
     height: 100%
     border-radius: 5px
     background: $accentLighten
     background-image: linear-gradient(-52deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)
     background-size: 7px 7px
+    transition: all .4s ease
 
+  &__header
+    margin-bottom: 31px
   &__body
   &__steps
+    .owl-item
+      visibility: hidden
+      &.active
+        visibility: visible
   &__step
     padding-bottom: 20px
+    padding-right: 1px
+    &--first,
+    &--second,
+      padding-top: 16px
+    &--second
+      .check-travel-ban-form___buttons-row
+        margin-top: 50px
+    &--third
+      .check-travel-ban-form__checkbox
+        margin-bottom: 8px
+
+  &__step-btn
+    width: auto
+    padding-left: 16px
+    padding-right: 22px
+    background-color: #F2F5F4
+    &:focus:not(.disabled),
+    &:hover:not(.disabled)
+      outline: none
+      cursor: pointer
+      text-decoration: none
+      background-color: darken( #F2F5F4, 3%)
+    &:active:not(.disabled)
+      background-color: #F4D005
+    &:disabled
+      background: #F2F2F2 !important
+      pointer-events: none
+    .btn
+      &__icon-wrap
+        margin-right: 10px
+      &__text
+        margin-right: 0
+
+  &__checkbox
+    width: auto
+
+  &__sms-price
+    font-size: 15px
+    line-height: 18px
+    font-weight: 600
+    text-align: right
+    margin-top: 30px
+    margin-bottom: 20px
+
+.i-have-car-form
+  max-height: 0
+  margin-bottom: 0
+  opacity: 0
+  overflow: hidden
+  transition: opacity .2s ease .2s
+  &.show
+    max-height: 82px
+    margin-top: 31px
+    opacity: 1
+
+.ban-check-items
+  display: flex
+  flex-wrap: wrap
+  margin-left: -6px
+  margin-left: -6px
+  margin-bottom: 42px
+  &__col
+    padding-left: 6px
+    padding-right: 6px
+    &:first-child
+      flex: 1 1 47%
+      max-width: 47%
+    &:last-child
+      flex: 1 1 53%
+      max-width: 53%
+
+  &__item
+    display: flex
+    margin-bottom: 12px
+  &__icon
+    display: flex
+    justify-content: center
+    min-width: 26px
+    margin-right: 10px
+    img
+      width: auto !important
+      margin-top: 0
+    .icon
+      width: 15px
+      height: 15px
+      fill: $accentLighten
+      margin-top: 4px
+  &__text
+    font-size: 13px
+    line-height: 22px
+
+.send-sms-form
+  max-height: 0
+  margin-bottom: 0
+  opacity: 0
+  overflow: hidden
+  transition: opacity .3s ease
+  &.show
+    max-height: 50px
+    margin-top: 20px
+    opacity: 1
