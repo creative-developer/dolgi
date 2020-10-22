@@ -1,0 +1,17 @@
+extend ../layout/template
+
+block head
+	- var title = 'Новый поиск задолжностей по налогам'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/tax-debt-checker', title: 'Новый поиск задолжностей по налогам' }
+	])
+	main.debt-page
+		// Sections
+		include ./tax-debt-checker/main
+		include ./tax-debt-checker/tax-debt-payment
+		include ./index/services-section
+		include ./index/faq

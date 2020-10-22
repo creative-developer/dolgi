@@ -1,0 +1,82 @@
+section.b-tax-debt-payment
+	.container
+		.row
+			.col-8
+				h3._title Найдено: <span>2</span>
+		.row
+			.col-8
+				.b-choose-btn._choose-btn
+					._text Данные ФССП актуальные на дату 24.10.2020
+					label.b-checkbox
+						input(type="checkbox" name="choose-all")
+						span._icon-wrap
+							+icon('check')
+						span._text Выбрать все
+				._wrap
+					.b-debt-table.-tax._debt-table.js-choose
+						._header
+							._title-wrap
+								._title-icon-wrap
+									img._title-icon(src="img/icons/hands.svg" alt="")
+								._title Подоходный налог
+							label.b-checkbox._checkbox.-small
+								input(type="checkbox" name="debtID-1")
+								span._icon-wrap
+									+icon('check')
+								span._text Выбрать
+						._body
+							._tr
+								._td.-title УИН
+								._td.-value 34909917268810271803382651
+							._tr
+								._td.-title Организация
+								._td.-value МРИ ФНС России №8 по Ленинградской области
+							._tr
+								._td.-title Получатель платежа
+								._td.-value УФК по Ленинградской области
+							._tr
+								._td.-title.-price-title Сумма
+								._td.-price 6 500 руб.
+					.b-debt-table.-tax._debt-table.js-choose
+						._header
+							._title-wrap
+								._title-icon-wrap
+									img._title-icon(src="img/icons/car.svg" alt="")
+								._title Транспортный налог
+							label.b-checkbox._checkbox.-small
+								input(type="checkbox" name="debtID-1")
+								span._icon-wrap
+									+icon('check')
+								span._text Выбрать
+						._body
+							._tr
+								._td.-title УИН
+								._td.-value 34909917268810271803382651
+							._tr
+								._td.-title Организация
+								._td.-value Межрайонная инспекция ФНС России №3 по Ленинградской области
+							._tr
+								._td.-title Получатель платежа
+								._td.-value УФК Ленинградская обл, Кингисепп 
+							._tr
+								._td.-title.-price-title Сумма
+								._td.-price 11 500 руб.
+				include ../../layout/modules/warning-banner
+			.col-4
+				.b-info-card.-fix-table._info-card
+					._top-line
+						._icon-wrap
+							img._icon(src="img/icons/paper.svg" alt="")
+						h3._title Результаты <br>по данным ФНС
+					._center-line
+						ul.b-table-list.-smallest
+							li._item
+								._text.-title ИНН:
+								._text.-value 563565286576
+							li._item
+								._text.-title Всего найдено записей:
+								._text.-value 2
+							li._item
+								._text.-title Сумма задолжностей:
+								._text.-value 28 984 руб.
+						button.b-btn.-border._btn Оплатить все

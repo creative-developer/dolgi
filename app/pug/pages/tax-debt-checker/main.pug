@@ -1,0 +1,20 @@
+section.b-tax-debt-checker.section
+	.container
+		.row
+			.col-8
+				h1._title.main-title Новый поиск задолжностей по налогам
+				form.b-main-form._form
+					.b-input._input
+						span._text Введите ваш ИНН
+						input._input(type="text" name="inn" placeholder="563565286576")
+					.input-row
+						.input-col
+							button.b-btn._btn
+								span._text Найти задолженность
+								span._icon-wrap
+									+icon('arrow-right')
+			.col-4
+				.b-main-logo
+					._img-wrap
+						img._img(src="img/logo/main-logo.svg" alt="")
+					._text Источник информации является реестр должников судебных приставов

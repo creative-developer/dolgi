@@ -1,7 +1,7 @@
 export const chooseCheckboxexInit = () => {
   const choseBtn = $('.choose-btn')
   const checkboxChooseAll = choseBtn.find('input[name="choose-all"]')
-  const checkboxes = choseBtn.siblings('.js-choose').find('input[type="checkbox"]')
+  const checkboxes = choseBtn.siblings().find('input[type="checkbox"]')
 
   checkboxChooseAll.change(function () {
     const isChecked = $(this).is(':checked')
@@ -14,7 +14,7 @@ export const chooseCheckboxexInit = () => {
   })
 
   checkboxes.change(function () {
-    const checkedItems = choseBtn.siblings('.js-choose').find('input[type="checkbox"]:checked')
+    const checkedItems = choseBtn.siblings().find('input[type="checkbox"]:checked')
 
     if (checkedItems.length === checkboxes.length) {
       checkboxChooseAll.prop('checked', true)
