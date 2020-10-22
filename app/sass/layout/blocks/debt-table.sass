@@ -49,6 +49,42 @@
 					font-size: 13px
 					font-weight: 600
 
+	&--unbordered
+		border: 0
+		margin-top: 1px
+		padding: 7px 0
+		.debt-table
+
+			&__header
+				margin: 0
+				padding: 20px 0 18px
+				border: 0
+
+			&__body
+				padding: 10px 0
+
+			&__col
+				&:first-child
+					flex-basis: 77.8%
+					max-width: 77.8%
+				&:last-child
+					flex-basis: 22.2%
+					max-width: 22.2%
+
+			&__title-wrap
+				max-width: 400px
+
+			&__tr
+				padding: 11.3px 17px 11.3px 14px
+
+			&__td
+				&:first-child
+					flex-basis: 42%
+					max-width: 42%
+				&:last-child
+					flex-basis: 58%
+					max-width: 58%
+
 	&__header
 		display: flex
 		align-items: flex-start

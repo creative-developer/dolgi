@@ -1,0 +1,14 @@
+extend ../layout/template
+
+block head
+	- var title = 'Задолженности ФССП'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/bailiff-service', title: 'Задолженности ФССП' }
+	])
+	main.debt-page
+		// Sections
+		include ./bailiff-service/main

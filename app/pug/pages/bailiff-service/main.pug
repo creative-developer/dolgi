@@ -1,6 +1,6 @@
-section.b-confirmation-payment.section
+section.b-confirmation-payment.-bailiff-service.section
 	.container
-		h1._title.main-title Потверждение оплаты задолженностей
+		h1._title.main-title Задолженности ФССП
 		.row
 			.main-col.main-col--left
 				._wrap
@@ -11,28 +11,34 @@ section.b-confirmation-payment.section
 							._col
 								._header-title Сумма
 						._body
-							._item
-								._col
-									._title Транспортный налог
-									._uin-wrap
-										._uin УИН
-										._uin-number 1000922382281662000375
-								._col
-									.b-price
-										._text 500 руб.
-										button.cancel-btn._cancel
-											+icon('cancel')
-							._item
-								._col
-									._title Подоходный налог
-									._uin-wrap
-										._uin УИН
-										._uin-number 434509223822862534538
-								._col
-									.b-price
-										._text 500 руб.
-										button.b-cancel-btn._cancel
-											+icon('cancel')
+							.b-debt-table.-unbordered._debt-table
+								._header
+									._col
+										._title-wrap
+											._title Должник
+											._name РУДАКОВ ДМИТРИЙ СЕРГЕЕВИЧ 21.03.1984 ВОРОНЕЖСКАЯ ОБЛ
+									._col
+										.b-price
+											._text 2 981.39 руб.
+											button.cancel-btn._cancel
+												+icon('cancel')
+								._body
+									._tr
+										._td.-title Номер и дата испол. производства:
+										._td.-value 34909917268810271803382651
+									._tr
+										._td.-title Реквизиты испол. документа:
+										._td.-value Акт по делу об административном правонарушении от 26.06.2018 № 4-464/18 СУДЕБНЫЙ УЧАСТОК № 5 В ЦЕНТРАЛЬНОМ СУДЕБНОМ РАЙОНЕ ВОРОНЕЖСКОЙ ОБЛАСТИ
+									._tr
+										._td.-title Отдел судебных приставов:
+										._td.-value Бутурлиновский РОСП 397507, Россия, Воронежская обл., , г. Бутурлиновка, , ул. Попкова, д. 11,
+									._tr
+										._td.-title Пристав-исполнитель:
+										._td.-value ХРИСТЕНКО О. А. +74736121033, +7(47361)2-10-33
+									._tr
+										._td.-title Предмет исполнения:
+										._td.-value Штраф как вид наказания по делам об АП, назначенный судом (за исключением дел по протоколам ФССП)
+
 					form._form
 						._fields
 							.b-input._input
@@ -43,7 +49,7 @@ section.b-confirmation-payment.section
 								input._input(type="text" name="email" placeholder="name@mail.ru")
 						._info
 							._info-title Колличество задолженностей:
-							._info-value 2 шт. на сумму 1000 рублей
+							._info-value 1 шт. на сумму 2 981.39  рублей
 						._bottom-line
 							.input-row._flex-end
 								.input-col
