@@ -1,0 +1,14 @@
+extend ../layout/template
+
+block head
+	- var title = 'Потверждение оплаты задолженностей'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/confirmation-payment', title: 'Потверждение оплаты задолженностей' }
+	])
+	main.debt-page
+		// Sections
+		include ./confirmation-payment/main

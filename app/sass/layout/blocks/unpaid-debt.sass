@@ -1,0 +1,85 @@
+.unpaid-debt
+	background: #fff
+	border: 1px solid $accentLighten
+	border-radius: 2px
+	&__header
+		display: flex
+		align-items: center
+		background: #fff
+		border-radius: 2px
+		border: 1px solid $accentLighten
+		margin: -1px
+		padding: 14px 25px 16px
+		&-title
+			font-size: 15px
+			line-height: 18px
+			color: $c1
+
+	&__col
+		&:first-child
+			flex-basis: 78%
+			max-width: 78%
+		&:last-child
+			flex-basis: 22%
+			max-width: 22%
+
+	&__body
+		padding: 0 24px
+
+	&__item
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 32px 0 28.5px
+		&:not(:last-child)
+			border-bottom: 1px solid #DEE5EF
+
+	&__title
+		font-weight: 600
+		font-size: 17px
+		line-height: 20px
+		color: $c1
+		margin-bottom: 11px
+
+	&__uin
+		font-weight: 500
+		font-size: 10px
+		line-height: 12px
+		color: $bdColor
+		background: #FFFFFF
+		margin-right: 12px
+		border-radius: 3px
+		border: 1px solid $bdColor
+		padding: 0px 3px 1px 3px
+		&-wrap
+			display: flex
+			align-items: center
+		&-number
+			font-size: 13px
+			line-height: 16px
+			color: $c2
+
+	&__price
+		font-weight: 500
+		font-size: 15px
+		line-height: 18px
+		color: $c1
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+	&__cancel
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 22px
+		height: 22px
+		background: #FDF0F0
+		outline: none
+		border: 0
+		border-radius: 3px
+		svg
+			width: 8px
+			height: 8px
+			fill: $warningColor

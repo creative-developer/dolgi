@@ -24,6 +24,22 @@
 		background: $bdColor
 		opacity: 0.5
 
+	&--long
+		.debt-desk
+			&__item
+				display: block
+				font-weight: 500
+				&:not(:last-child)
+					margin-bottom: 40px
+
+			&__top-line
+				display: flex
+				align-items: center
+				margin-bottom: 15px
+
+			&__text
+				max-width: 180px
+
 	&__item
 		display: flex
 		align-items: center
@@ -47,3 +63,8 @@
 			background: #F2F5F8
 			border-radius: 8px
 			margin-right: 20px
+
+	&__desc
+		font-size: 13px
+		line-height: 18px
+		color: $c2
