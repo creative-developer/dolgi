@@ -1,0 +1,14 @@
+extend ../layout/template
+
+block head
+	- var title = 'Контакты'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/contacts', title: 'Контакты' }
+	])
+	main.contacts-page
+		// Sections
+		include ./contacts/main

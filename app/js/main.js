@@ -12,6 +12,7 @@ import { innToggleInit } from './modules/innToggle'
 import { debtCheckFormPos } from './modules/debtCheckFormPos'
 import { checkTravelBanSteps } from './modules/checkTravelBanSteps'
 import { chooseCheckboxexInit } from './modules/chooseCheckbox'
+import { mapInit } from './modules/contactsMap'
 
 // initFunctions
 mediaQueries()
@@ -28,3 +29,4 @@ innToggleInit()
 debtCheckFormPos()
 checkTravelBanSteps()
 chooseCheckboxexInit()
+mapInit()

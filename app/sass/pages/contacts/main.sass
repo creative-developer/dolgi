@@ -1,0 +1,76 @@
+.contacts
+	padding: 17px 0 119px
+	.map
+		display: flex
+		justify-content: flex-end
+		height: 500px
+		width: 100% !important
+		#map
+			width: 100% !important
+			height: 100% !important
+			max-width: 620px
+
+	&__title
+		margin-bottom: 59px
+
+	&__sub-title
+		line-height: 20px
+		margin-bottom: 20px
+
+	&__desc
+		position: relative
+		margin-bottom: 30px
+		padding-bottom: 30px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			max-width: 420px
+			height: 1px
+			background: #DEE5EF
+		p
+			margin-bottom: 0
+
+	&__work-time
+		margin-bottom: 50px
+
+	&__small-title
+		font-size: 13px
+		line-height: 20px
+		color: #BABABA
+		margin-bottom: 10px
+
+	&__address
+		font-size: 17px
+		line-height: 15px
+		color: $c1
+		margin-bottom: 50px
+
+	&__phone
+		display: inline-block
+		font-weight: 500
+		font-size: 22px
+		line-height: 32px
+		color: $c1
+		margin-bottom: 10px
+		&:hover
+			color: $accentLighten
+
+	&__email
+		position: relative
+		font-size: 22px
+		line-height: 32px
+		color: $accentLighten
+		&:hover
+			color: $accent
+		&:after
+			content: ''
+			position: absolute
+			bottom: -6px
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			height: 1px
+			background: rgba($accentLighten, 0.25)
