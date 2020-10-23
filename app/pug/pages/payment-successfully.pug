@@ -1,0 +1,21 @@
+extend ../layout/template
+
+block head
+	- var title = 'Платеж успешно оплачен'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/payment-successfully', title: 'Платеж успешно оплачен' }
+	])
+	main.payment-successfully-page
+		// Sections
+		section.b-payment-successfully
+			.container
+				._wrap
+					._icon-wrap
+						img._icon(src="img/icons/big-check.svg" alt="")
+					h1._title Платеж успешно оплачен
+					._desc.md-desc Если у вас возникли вопросы, обратитесь в техническую поддержку сервиса
+						a._link.accent-link(href="mailto:info@dolgi.net") info@dolgi.net
