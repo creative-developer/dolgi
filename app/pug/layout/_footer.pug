@@ -16,25 +16,25 @@ footer.b-footer
 							nav.b-footer-nav
 								ul._list
 									li._item
-										a._link(href="#") Проверить запрет на выезд за границу
+										a._link(href="check-travel-ban.html") Проверить запрет на выезд за границу
 									li._item
 										a._link(href="#") Проверить паспорт на действительность
 									li._item
 										a._link(href="#") Узнать ИНН по паспорту
 									li._item
-										a._link(href="#") Проверить налоги
+										a._link(href="tax-debt-checker.html") Проверить налоги
 									li._item
-										a._link(href="#") Узнать задолженность
+										a._link(href="debt.html") Узнать задолженность
 						._col
 							._title Информация
 							nav.b-footer-nav
 								ul._list
 									li._item
-										a._link(href="#") Контакты
+										a._link(href="contacts.html") Контакты
 									li._item
-										a._link(href="#") Новости
+										a._link(href="news.html") Новости
 									li._item
-										a._link(href="#") Способ оплаты
+										a._link(href="payment-info.html") Способ оплаты
 						._col
 							._title Тех. поддержка
 							._links-wrap
@@ -70,15 +70,21 @@ footer.b-footer
 |
 |
 // Request popup
-.b-mfp.-request-popup.zoom-anim-dialog.mfp-hide#request
+.b-mfp.-notification-popup.zoom-anim-dialog.mfp-hide#notification-popup
 	form._form
-		+input('text','name','Имя','Ваше имя', true)
-		+input('text','phone','Телефон','Телефон', false)
-		button.btn Send
-		.b-form-result
-			.b-mess
-				._title Success!
-				._desc We will contact with you soon
+		h2._title Уважаемый Козлов Сергей Васильевич <br>По вашему запросу активных задолженностей не найдено
+		._desc.lg-desc Подпишитесь на уведомления, чтобы получать информацию о новых активных задолженностях, налогах и штрафах ГИБДД.
+		._wrap
+			._row
+				._col
+					._small-text.sm-desc Мы будет оправлять вам на почту напоминания,<br> если появились новые задолженности
+					.b-input._input
+						input._input(type="text" name="email" placeholder="Введите ваш e-mail")
+				._col
+					button.b-btn.-subscribe._btn
+						span._text Подписаться
+						._icon-wrap
+							+icon('plane')
 
 |
 |

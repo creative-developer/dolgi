@@ -29,7 +29,7 @@ export const inputs = [
   },
   {
     selector: 'stateSign',
-    regexp: /^[А-Я]{1}[0-9]{3}[А-Я]{2}[0-9]{3}/,
+    regexp: /^[А-Я]{1}[0-9]{3}[А-Я]{2}[0-9]{2,3}/,
   },
   {
     selector: 'vehicleCertificate',

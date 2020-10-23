@@ -40,9 +40,9 @@ export const checkTravelBanSteps = () => {
       nav: false,
       dots: false,
       autoHeight: true,
-      mouseDrag: true,
-      touchDrag: true,
-      pullDrag: true,
+      mouseDrag: false,
+      touchDrag: false,
+      pullDrag: false,
       onInitialized: function (event) {
         const currentCarousel = $(event.target)
         setTimeout(() => {

@@ -1,24 +1,66 @@
 ////////// Popup
 .mfp
 	position: relative
-	max-width: 40.625rem
-	min-height: 26.25rem
+	max-width: 56.25rem
+	min-height: 31.25rem
 	text-align: left
-	padding: 5rem 4.375rem 3.125rem
+	padding: 100px 70px 100px
 	margin: 2.5rem auto
 	background: #fff
 	+md
 		max-width: 450px
 
 	.mfp-close
-		top: 5px
-		right: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		top: 15px
+		right: 15px
 		opacity: 1
+		width: 36px
+		height: 36px
+		border-radius: 3px
+		background: #F0F0F0
 		transition: all .2s ease
+		svg
+			fill: $c0
+			width: 10px
+			height: 10px
+			pointer-events: none
 		&:focus
 			outline: none
 		&:active
 			transform: translateY(1px)
+
+	&__title
+		font-weight: 600
+		font-size: 26px
+		line-height: 36px
+		text-align: center
+		color: $c1
+		margin-bottom: 26px
+
+	&__desc
+		line-height: 22px
+		text-align: center
+		margin-bottom: 63px
+
+	&__wrap
+		max-width: 560px
+		margin: 0 auto
+	&__row
+		display: flex
+		align-items: flex-end
+		margin: 0 -5px
+
+	&__col
+		padding: 0 5px
+		&:first-child
+			flex-basis: 63.16%
+			max-width: 63.16%
+		&:last-child
+			flex-basis: 36.84%
+			max-width: 36.84%
 
 .form-result
 	position: absolute
