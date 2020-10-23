@@ -1,0 +1,20 @@
+extend ../layout/template
+
+block head
+	- var title = ' Страница не существует!'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/404-page', title: ' Страница не существует!' }
+	])
+	main.404-page
+		// Sections
+		section.b-error-page
+			.container
+				._wrap
+					._big-title 404
+					h1._title  Страница не существует!
+					._desc.md-desc Вы зашли на несуществующую страницу.
+					a._btn.btn(href="#") Вернуться на главную
