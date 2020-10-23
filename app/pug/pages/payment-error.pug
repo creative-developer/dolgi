@@ -1,0 +1,22 @@
+extend ../layout/template
+
+block head
+	- var title = 'Ошибка оплаты!'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/payment-successfully', title: 'Ошибка оплаты!' }
+	])
+	main.payment-error-page
+		// Sections
+		section.b-payment-error
+			.container
+				._wrap
+					._icon-wrap
+						img._icon(src="img/icons/big-warning.svg" alt="")
+					h1._title Ошибка оплаты!
+					._desc.md-desc Не удалось совершить оплату, возможно вы передумали или возник технический сбой. <br>Попробуйте совершить оплату повторно или обратитесь в техническую поддержку
+						a._link.accent-link(href="mailto:info@dolgi.net") info@dolgi.net
+					a._btn.btn(href="#") Оплатить
