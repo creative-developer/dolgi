@@ -1,0 +1,25 @@
+extend ../layout/template
+
+block head
+	- var title = 'Скачать квитанцию вы можете по ссылке или в личном кабинете на сайте.'
+	|
+	|
+
+block content
+	+breadcrumbs([
+		{ path: '/payment-error', title: 'Скачать квитанцию вы можете по ссылке или в личном кабинете на сайте.' }
+	])
+	main.receipt-download-page
+		// Sections
+		section.b-receipt-download
+			.container
+				._wrap
+					._icon-wrap
+						img._icon(src="img/icons/checklist.svg" alt="")
+					h1._title Скачать квитанцию вы можете по ссылке или в личном кабинете на сайте.
+					._desc.md-desc Подпишитесь на уведомления о всех задолженонстях, штрафах и розыске по всем базам ФССП, ФНС, ФМС.
+					form._form
+						.b-input._input
+							span._text E-mail для получения квитанции
+							input._input(type="email" name="email" placeholder="name@mail.ru")
+						button._btn.btn(href="#") Подписаться
