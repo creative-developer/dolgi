@@ -1,24 +1,39 @@
 .check-travel-ban-page
   padding-top: 17px
   padding-bottom: 43px
+  +md
+    padding-top: 5px
+    padding-bottom: 30px
+  +sm
+    padding-bottom: 20px
 
   &__title
     margin-bottom: 28px
+    +md
+      margin-bottom: 15px
 
   &__desc
     font-size: 15px
     line-height: 24px
     padding-right: 40px
     margin-bottom: 50px
+    +lg
+      margin-bottom: 35px
+    +md
+      margin-bottom: 30px
 
   &__form-row
   &__left-col
     +make-col-ready()
     +make-col(8.5)
+    +lg
+      +make-col(12)
 
   &__right-col
     +make-col-ready()
     +make-col(3.5)
+    +lg
+      +make-col(12)
 
 // .source-card
 .source-card
@@ -26,6 +41,9 @@
   border: 1px solid #CAD2DF
   box-sizing: border-box
   border-radius: 5px
+  clear: both
+  +xl
+    padding: 19px 10px
 
   &__title
     font-size: 13px
