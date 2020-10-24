@@ -7,17 +7,24 @@
 	padding: 13px 20px
 	cursor: pointer
 	user-select: none
+	+lg
+		padding: 13px
 
 	&__text
 		font-weight: 500
 		font-size: 13px
 		line-height: 13px
 		color: $c2
+		+lg
+			margin-right: 40px
+			line-height: 15px
 
 	.checkbox
 		position: relative
 		width: auto
 		font-weight: 500
+		+lg
+			white-space: nowrap
 		&:after
 			content: ''
 			position: absolute

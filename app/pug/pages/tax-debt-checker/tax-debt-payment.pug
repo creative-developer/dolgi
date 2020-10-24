@@ -4,7 +4,7 @@ section.b-tax-debt-payment
 			.col-8
 				h3._title Найдено: <span>2</span>
 		.row
-			.col-8
+			.col-12.col-lg-8
 				label.b-choose-btn._choose-btn
 					span._text Данные ФССП актуальные на дату 24.10.2020
 					span.b-checkbox
@@ -61,8 +61,9 @@ section.b-tax-debt-payment
 							._tr
 								._td.-title.-price-title Сумма
 								._td.-price 11 500 руб.
-				include ../../layout/modules/warning-banner
-			.col-4
+				._desktop-banner
+					include ../../layout/modules/warning-banner
+			.col-12.col-lg-4
 				.b-info-card.-fix-table._info-card
 					._top-line
 						._icon-wrap
@@ -80,3 +81,5 @@ section.b-tax-debt-payment
 								._text.-title Сумма задолжностей:
 								._text.-value 28 984 руб.
 						button.b-btn.-border._btn Оплатить все
+				._mobile-banner
+					include ../../layout/modules/warning-banner

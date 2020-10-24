@@ -1,6 +1,8 @@
 
 .tax-debt-payment
 	padding: 50px 0 7px
+	+lg
+		padding: 20px 0 25px
 
 	&__title
 		font-weight: 600
@@ -26,6 +28,19 @@
 	&__debt-table
 		&:not(:last-child)
 			margin-bottom: 20px
+			+lg
+				margin-bottom: 10px
 
 	&__wrap
 		margin-bottom: 30px
+		+lg
+			margin-bottom: 40px
+
+	&__mobile-banner
+		margin-top: 40px
+		+min_lg
+			display: none
+
+	&__desktop-banner
+		+lg
+			display: none
