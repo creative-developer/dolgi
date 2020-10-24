@@ -1,25 +1,34 @@
 .info-section
 	position: relative
 	padding: 78px 0 79px
+	+lg
+		padding: 40px 0 25px
+
 	&:after
-		content: ''
-		position: absolute
-		bottom: 0
-		left: 50%
-		transform: translateX(-50%)
-		width: 100%
-		max-width: 1140px
-		height: 1px
-		background: #D2D8E3
+		+min_lg
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			max-width: 1140px
+			height: 1px
+			background: #D2D8E3
 
 	&__col
 		padding: 0 $gridPadding
+		+lg
+			flex-basis: 100%
+			max-width: 100%
 		&--left
-			flex-basis: 59.5%
-			max-width: 59.5%
+			+min_lg
+				flex-basis: 59.5%
+				max-width: 59.5%
 		&--right
-			flex-basis: 40.5%
-			max-width: 40.5%
+			+min_lg
+				flex-basis: 40.5%
+				max-width: 40.5%
 	&__title
 		margin-bottom: 30px
 
@@ -27,15 +36,26 @@
 		font-weight: 500
 		color: $c0
 		margin-bottom: 40px
+		+lg
+			margin-bottom: 18px
 
 	&__simple-list
 		margin-bottom: 30px
+		+md
+			margin-bottom: 18px
 
 	&__desc
 		color: $c1
 		max-width: 720px
+		line-height: 24px
+		+lg
+			margin-bottom: 30px
 		p
 			margin-bottom: 0
 
 	&__info-card
-		margin-left: auto
+		+lg
+			width: 100%
+			max-width: 100%
+		+min_lg
+			margin-left: auto

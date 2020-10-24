@@ -1,11 +1,21 @@
 .services-section
 	padding: 81px 0 41px
+	+lg
+		padding: 25px 0
 
 	&__title
 		margin-bottom: 49px
+		+lg
+			margin-bottom: 30px
 
 	&__slider
 		position: relative
+		+md
+			width: 100%
+		&.nav-disabled
+			&:after,
+			&:before
+				display: none
 		&:after
 			content: ''
 			position: absolute
@@ -29,6 +39,9 @@
 
 	&__item
 		padding: 0 $gridPadding
+		&:not(:last-child)
+			+md
+				margin-bottom: 15px
 
 	.owl
 		&-nav
@@ -76,4 +89,3 @@
 			margin-right: -8px
 			svg
 				transform: rotate(-180deg)
-			mr

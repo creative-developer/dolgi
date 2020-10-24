@@ -2,14 +2,27 @@
 	position: relative
 	&__item
 		padding: 0 15px 30px
+		+lg
+			padding: 0 15px 17px
 
 	.owl
 		&-nav
 			position: absolute
-			top: -85px
-			left: 299px
 			display: flex
 			align-items: center
+			+min_md
+				top: -85px
+				left: 299px
+			+md
+				top: 150px
+				left: 50%
+				justify-content: space-between
+				width: calc( 100% - 60px )
+				height: 0
+				transform: translateX(-50%)
+			+sm
+				top: 26vw
+
 		&-prev,
 		&-next
 			display: flex
@@ -20,18 +33,28 @@
 			background: #D3DBDB !important
 			border-radius: 50%
 			transition: all 0.3s ease
+			+md
+				background: rgba(#fff, 0.75) !important
 			&:hover
 				background: rgba(#D3DBDB, 0.5) !important
+				+md
+					background: #fff !important
 			&:active
 				background: $accentLighten !important
+				+md
+					background: #fff !important
+
 			svg
 				fill: #fff
 				width: 6px
 				height: 10px
 				transition: all 0.3s ease
+				+md
+					fill: $accentLighten
 			&:focus
 				outline: none
 		&-prev
-			margin-right: 6px
+			+min_md
+				margin-right: 6px
 		&-next
 			transform: rotate(-180deg)

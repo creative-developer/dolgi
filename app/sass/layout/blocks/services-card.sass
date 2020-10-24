@@ -5,6 +5,8 @@
 	padding: 34px 40px 29px 29px
 	position: relative
 	z-index: 100
+	+xl
+		padding: 34px 25px 29px
 
 	&__top-line
 		display: flex
@@ -21,12 +23,24 @@
 			min-width: 52px
 			min-height: 52px
 			margin-right: 19px
+			+xl
+				width: 42px
+				height: 42px
+				min-width: 42px
+				min-height: 42px
+				margin-right: 12px
 
 	&__title
 		font-weight: 600
 		font-size: 17px
 		line-height: 22px
 		color: $c1
+		+xl
+			+min_lg
+				font-size: 16px
+				line-height: 20px
+				br
+					display: none
 
 	&__desc
 		position: relative

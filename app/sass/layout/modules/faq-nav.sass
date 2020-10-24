@@ -1,16 +1,31 @@
 .faq-nav
-	max-width: 360px
+	+lg
+		margin-bottom: 20px
+	+min_lg
+		max-width: 360px
+		+xl
+			max-width: 290px
+
 	&.scrolled
-		position: fixed
-		top: 20px
+		+min_lg
+			position: fixed
+			top: 20px
+
 	&__list
 		border-radius: 3px
 		background: #FFFFFF
 		border: 1px solid $bdColor
 		padding: 10px 30px 1px
+		+min_lg
+			+xl
+				padding: 10px 15px 1px
 
 	&__item
 		padding: 19.3px 0
+		+min_lg
+			+xl
+				padding: 15px 0
+
 		&:not(:last-child)
 			border-bottom: 1px solid #D9E3F5
 
@@ -19,6 +34,11 @@
 		font-size: 15px
 		line-height: 25px
 		color: $c1
+		+min_lg
+			+xl
+				font-size: 14px
+				line-height: 22px
+
 		&:hover
 			color: $accent
 

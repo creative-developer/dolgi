@@ -23,7 +23,7 @@ const smartScrolling = () => {
 }
 
 export const smartScrollingInit = () => {
-  if ($('.faq').length) {
+  if ($('.faq').length && $('body').width() >= 992) {
     smartScrolling()
     $(window).scroll(smartScrolling)
   }
