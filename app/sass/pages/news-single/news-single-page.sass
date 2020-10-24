@@ -1,6 +1,10 @@
 .news-single-page
   padding-top: 17px
   padding-bottom: 50px
+  +lg
+    padding-bottom: 40px
+  +md
+    padding-top: 5px
 
   &__title
     margin-bottom: 18px
@@ -11,29 +15,54 @@
     font-size: 15px
     line-height: 15px
     margin-bottom: 60px
+    +lg
+      margin-bottom: 50px
+    +md
+      flex-wrap: wrap
+      margin-bottom: 40px
+
     & > div
       &:first-child
         padding-right: 13px
       &:not(:first-child)
         position: relative
         padding: 0 10px
-      &:not(:first-child):not(:nth-child(2))
+      &:not(:first-child)
         &::before
           content: '.'
           position: absolute
           top: -5px
           left: -2px
 
+      &:nth-child(2)
+        +min_md
+          &::before
+            display: none
+
   &__category
   &__category-link
   &__published-on
+    +md
+      width: 70%
+      &::before
+        top: -3px !important
+    +sm
+      width: 60%
 
   &__viewed-count
+    +md
+      padding-left: 0 !important
+      margin-top: 13px
+      &::before
+        display: none
     .icon
       width: 16px
       height: 12px
     span
+
   &__read-time
+    +md
+      margin-top: 13px
     .icon
       width: 12px
       height: 12px
@@ -44,7 +73,10 @@
     margin-right: 10px
 
   &__preview
+    max-width: 700
     margin-bottom: 49px
+    +lg
+      max-width: 100%
     img
 
   &__content
@@ -52,6 +84,22 @@
     line-height: 22px
     color: $c1
     padding-right: 53px
+    +lg
+      padding-right: 0
+
+    .debt-check-card
+      top: 0 !important
+      +min_md
+        display: none
+      +lg
+        display: block
+        margin-left: 0
+        margin-top: 30px
+        max-width: 370px
+
+      &__title
+        margin-top: 0
+        margin-bottom: 36px
 
     p
       margin-bottom: 22px
@@ -62,6 +110,10 @@
       line-height: 28px
       font-weight: 600
       margin: 50px 0 30px
+      +lg
+        margin: 40px 0 20px
+      +md
+        margin: 30px 0 20px
 
     ul
       margin-bottom: 30px
