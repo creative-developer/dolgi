@@ -4,22 +4,29 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+lg
+			flex-direction: column
+			align-items: flex-start
 
 	&__item
 		position: relative
-		&:after
-			content: ''
-			position: absolute
-			bottom: 0px
-			left: 50%
-			transform: translateX(-50%)
-			width: 100%
-			height: 3px
-			background: #91E0C5
-			opacity: 0
-		&--active
+		&:not(:last-child)
+			+lg
+				margin-bottom: 32px
+		+min_lg
 			&:after
-				opacity: 1
+				content: ''
+				position: absolute
+				bottom: 0px
+				left: 50%
+				transform: translateX(-50%)
+				width: 100%
+				height: 3px
+				background: #91E0C5
+				opacity: 0
+			&--active
+				&:after
+					opacity: 1
 
 	&__link
 		display: inline-block
@@ -31,6 +38,22 @@
 		text-align: center
 		+xl
 			padding: 16px 15px 18px
+		+lg
+			position: relative
+			padding: 0
+			font-weight: 500
+			font-size: 17px
+			line-height: 17px
+			color: $accentLighten
+			&:after
+				content: ''
+				position: absolute
+				bottom: -8px
+				left: 50%
+				width: 100%
+				height: 1px
+				transform: translateX(-50%)
+				background: rgba(#28AA7E, 0.15)
 
 		&:hover
 			color: #fff

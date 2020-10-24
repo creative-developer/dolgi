@@ -2,6 +2,6 @@ export const menuInit = () => {
   // Mobile menu toggle
   $('.js-menu').click(function () {
     $(this).toggleClass('is-active')
-    $('.menu').toggleClass('opened')
+    $('.mobile-menu').toggleClass('opened')
   })
 }

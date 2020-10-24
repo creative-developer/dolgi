@@ -10,10 +10,10 @@ export const mediaQueriesInit = () => {
   MQ(
     breakpoints.lg,
     () => {
-      // $('.mobile-menu .container').append($('.nav--header'))
+      // $('.mobile-menu__center-line').append($('.nav'))
     },
     () => {
-      // $('.header__col--right').append($('.nav--header'))
+      // $('.header__nav-col').append($('.nav'))
     },
   )
 }

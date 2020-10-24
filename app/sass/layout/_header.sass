@@ -1,13 +1,38 @@
 .header
+	+lg
+		position: relative
+	&:after
+		+lg
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			height: 1px
+			background: #DEE5EF
+			max-width: 690px
+		+md
+			max-width: 510px
+		+sm
+			max-width: 100%
+			width: calc( 100% - 30px)
+
 	&__top-line
 		justify-content: space-between
 		align-items: center
 		padding: 20px 0
 		+lg
-			border-bottom: 1px solid #DEE5EF
+			justify-content: space-between
 
 	&__col
 		padding: 0 $gridPadding
+		flex-basis: 50%
+		max-width: 50%
+		&--right
+			+lg
+				display: flex
+				justify-content: flex-end
 
 	&__nav-wrap
 		display: flex
