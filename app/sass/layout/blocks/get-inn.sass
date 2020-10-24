@@ -1,4 +1,8 @@
 .get-inn
+	+md
+		display: flex
+		flex-direction: column
+		align-items: center
 	&__link
 		display: inline-flex
 		align-items: center
@@ -7,6 +11,8 @@
 		line-height: 20px
 		color: $accent
 		margin-bottom: 24px
+		+lg
+			margin-bottom: 19px
 		&:hover
 			color: $c2
 			.get-inn
@@ -45,6 +51,8 @@
 
 	&__wrap
 		margin-bottom: 15px
+		+lg
+			margin-bottom: 20px
 
 	&__form
 		width: 100% !important
