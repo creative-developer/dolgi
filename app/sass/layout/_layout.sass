@@ -16,26 +16,30 @@ html,
 body
 	font-size: 16px
 	+xxl
-		// font-size: 15px
+		font-size: 15px
 	+xl
-		// font-size: 14px
+		font-size: 14px
 	+lg
-		// font-size: 12px
+		font-size: 12px
 	+md
-		// font-size: 11px
+		font-size: 11px
 	+sm
 
 .section
 	position: relative
 	padding: 17px 0 59px
 	background: #FFFFFF
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+	+min_lg
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
 
 .input-row
 	margin: 0 -10px
 	display: flex
+	flex-wrap: wrap
 	&:not(:last-child)
 		margin-bottom: 23px
+		+md
+			margin-bottom: 16px
 	&--end
 		align-items: flex-end
 
@@ -43,18 +47,31 @@ body
 	padding: 0 10px
 	flex-basis: 50%
 	max-width: 50%
+	&:not(:last-child)
+		+md
+			margin-bottom: 16px
+	+md
+		flex-basis: 100%
+		max-width: 100%
 
 .main-form
 	margin-top: -5px
 
 .main-col
 	padding: 0 $gridPadding
+	+lg
+		flex-basis: 100%
+		max-width: 100%
 	&--left
-		flex-basis: 63.7%
-		max-width: 63.7%
-		padding-right: 50px
+		+min_lg
+			flex-basis: 63.7%
+			max-width: 63.7%
+			padding-right: 50px
+		+lg
+			margin-bottom: 40px
 
 	&--right
-		flex-basis: 36.3%
-		max-width: 36.3%
-		padding-left: 50px
+		+min_lg
+			flex-basis: 36.3%
+			max-width: 36.3%
+			padding-left: 50px

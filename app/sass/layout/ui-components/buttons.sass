@@ -72,6 +72,9 @@
 	outline: none
 	transition: all .3s ease
 	user-select: none
+	+lg
+		padding: 16px 16px
+
 	&:focus:not(.disabled),
 	&:hover:not(.disabled)
 		outline: none
@@ -89,7 +92,12 @@
 		&-wrap
 			display: flex
 			align-items: center
-			margin-right: 13px
+			+min_lg
+				margin-right: 13px
+
+	&__text
+		+lg
+			display: none
 
 .cancel-btn
 	display: flex

@@ -1,32 +1,19 @@
 const breakpoints = {
-  xl: 1200,
-  lg: 992,
-  md: 768,
-  sm: 576,
-  xsm: 375,
+  xl: '(max-width: 1199px)',
+  lg: '(max-width: 991px)',
+  md: '(max-width: 767px)',
+  sm: '(max-width: 575px)',
+  xsm: '(max-width: 374px)',
 }
-
-// Media quaries
-const MQ = {
-  wWidth: 0,
-  isXL: false,
-  isLG: false,
-  isMD: false,
-  isSM: false,
-  isXSM: false,
-  updateState: function () {
-    this.wWidth = $(window).width()
-
-    for (let key in breakpoints) {
-      this['is' + key.toUpperCase()] = this.wWidth <= breakpoints[key]
-    }
-  },
-}
-
-MQ.updateState()
-
-export const mediaQueries = () => {
-  $(window).on('resize', function () {
-    MQ.updateState()
-  })
+const MQ = $.mq.action
+export const mediaQueriesInit = () => {
+  MQ(
+    breakpoints.lg,
+    () => {
+      // $('.mobile-menu .container').append($('.nav--header'))
+    },
+    () => {
+      // $('.header__col--right').append($('.nav--header'))
+    },
+  )
 }

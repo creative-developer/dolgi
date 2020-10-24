@@ -35,6 +35,7 @@ function jsLibs() {
     'app/libs/jQueryFormStyler/jquery.formstyler.min.js',
     'app/libs/jquery-validation/dist/jquery.validate.min.js',
     'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
+    'app/libs/jQuery-Plugin-For-matchMedia-API/dist/jquery.matchMedia.js',
     // 'app/libs/fancybox/dist/jquery.fancybox.min.js',
   ])
     .pipe(concat('libs.min.js'))
@@ -61,7 +62,7 @@ function cssLibs() {
 
 function minJs() {
   return (
-    src('./app/js/**/**/*.js')
+    src('./app/js/**/*.js')
       .pipe(webpackStream(webpackConfig, webpack))
       .on('error', function (error) {
         this.emit('end')
@@ -156,7 +157,7 @@ function svgSprite() {
 watch(['app/sass/**/*.sass', '!app/sass/libs/libs.sass'], css)
 watch('app/sass/libs.sass', cssLibs)
 watch('app/pug/**/*.pug', html)
-watch(['app/js/main.js', 'app/js/modules/*.js'], minJs)
+watch(['app/js/main.js', 'app/js/modules/*.js', 'app/js/mediaQueries/*.js'], minJs)
 watch('app/img/svg-sprite/*.svg', svgSprite)
 
 exports.minJs = minJs

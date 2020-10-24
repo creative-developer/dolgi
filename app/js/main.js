@@ -1,4 +1,4 @@
-import { mediaQueries } from './mediaQueries/mediaQueries'
+import { mediaQueriesInit } from './mediaQueries/mediaQueries'
 import { popupsInit } from './modules/popups'
 import { menuInit } from './modules/menu'
 import { inputsMaskInit } from './modules/inputsMask'
@@ -15,7 +15,7 @@ import { chooseCheckboxexInit } from './modules/chooseCheckbox'
 import { mapInit } from './modules/contactsMap'
 
 // initFunctions
-mediaQueries()
+// mediaQueries()
 menuInit()
 inputsMaskInit()
 popupsInit()
@@ -30,3 +30,4 @@ debtCheckFormPos()
 checkTravelBanSteps()
 chooseCheckboxexInit()
 mapInit()
+mediaQueriesInit()

@@ -2,7 +2,10 @@
 	font-size: 13px
 	line-height: 16px
 	color: $c2
-	max-width: 300px
+	+min_lg
+		max-width: 300px
+	+md
+		text-align: center
 
 	&__link
 		color: $accent

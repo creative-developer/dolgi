@@ -1,0 +1,16 @@
+.hamburger
+	display: none
+	justify-content: center
+	align-items: center
+	width: 52px
+	height: 52px
+	padding: 0
+	border-radius: 3px
+	background: $accentLighten
+	z-index: 3
+	+lg
+		display: flex
+	&.is-active
+		background: $warningColor
+	&:focus
+		outline: none
