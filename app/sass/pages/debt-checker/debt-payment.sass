@@ -1,11 +1,19 @@
 .debt-payment
 	padding: 62px 0 40px
+	+lg
+		padding: 25px 0
+	&__col
+		&--left
+			+lg
+				margin-bottom: 30px
 
 	&__title
 		font-weight: 600
 		font-size: 21px
 		line-height: 26px
 		margin-bottom: 18px
+		+lg
+			margin-bottom: 16px
 
 	&__desc
 		font-size: 13px
@@ -13,6 +21,8 @@
 		color: $c1
 		max-width: 730px
 		margin-bottom: 38px
+		+lg
+			margin-bottom: 50px
 		p
 			margin-bottom: 0
 
@@ -21,3 +31,12 @@
 
 	&__debt-table
 		margin-bottom: 20px
+
+	&__mobile-banner
+		margin-top: 40px
+		+min_lg
+			display: none
+
+	&__desktop-banner
+		+lg
+			display: none

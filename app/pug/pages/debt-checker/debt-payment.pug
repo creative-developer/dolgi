@@ -1,12 +1,12 @@
 section.b-debt-payment
 	.container
 		.row
-			.col-8
+			.col-12.col-lg-8
 				h2._title Виберите несколько задолжностей, чтобы погасить их одновременно
 				._desc
 					p Запись в Банке данных будет удалена или изменена (в случае частичного погашения задолженности) в течение 3 – 7 дней с момента оплаты, так как денежные средства должны поступить на депозитный счет отдела судебных приставов, распределены, перечислены взыскателю.
 		.row
-			.col-8
+			.col-12.col-lg-8._col.-left
 				label.b-choose-btn._choose-btn
 					span._text Данные ФССП актуальные на дату 24.10.2020
 					span.b-checkbox
@@ -101,9 +101,9 @@ section.b-debt-payment
 						._tr
 							._td.-title.-price-title Сумма задолженности
 							._td.-price 2 981.39 руб.
-
-				include ../../layout/modules/warning-banner
-			.col-4
+				._desktop-banner
+					include ../../layout/modules/warning-banner
+			.col-12.col-lg-4
 				.b-info-card.-fix-table._info-card
 					._top-line
 						._icon-wrap
@@ -129,3 +129,5 @@ section.b-debt-payment
 								._text.-title Сумма задолженностей:
 								._text.-value 25 389 руб.
 						button.b-btn.-border._btn Оплатить все
+				._mobile-banner
+					include ../../layout/modules/warning-banner

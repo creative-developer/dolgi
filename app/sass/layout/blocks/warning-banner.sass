@@ -3,6 +3,8 @@
 	background: #FBFFFE
 	border: 2px solid #84CCB4
 	border-radius: 5px
+	+lg
+		padding: 30px 30px 40px
 
 	&__row
 		display: flex
@@ -17,6 +19,8 @@
 
 		&--right
 			padding-top: 12px
+			+md
+				display: none
 
 	&__title
 		font-weight: 600
@@ -39,6 +43,9 @@
 		line-height: 26px
 		color: $c2
 		margin-bottom: 15px
+		+md
+			line-height: 17px
+			margin-bottom: 30px
 
 	&__btn
 		max-width: 199px

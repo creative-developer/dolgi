@@ -96,11 +96,15 @@
 		padding: 20px 25px 18px 30px
 		margin: -1px -1px 0 -1px
 		cursor: pointer
+		+lg
+			padding: 15px
 	label
 		width: auto
 
 	&__body
 		padding: 30px 30px 16px
+		+md
+			padding: 10px
 
 	&__title-wrap
 		display: flex
@@ -128,18 +132,26 @@
 		align-items: flex-start
 		border-radius: 5px
 		padding: 11.3px 30px 11.3px 15px
+		+md
+			flex-direction: column
 		&:nth-child(odd)
 			background: rgba(#F2F5F4, 0.5)
 		&:last-child
 			background: #fff
 
 	&__td
+		flex-basis: 100%
+		max-width: 100%
 		&:first-child
-			flex-basis: 43.3%
-			max-width: 43.3%
+			+min_lg
+				flex-basis: 43.3%
+				max-width: 43.3%
+			+lg
+				margin-bottom: 16px
 		&:last-child
-			flex-basis: 55.7%
-			max-width: 55.7%
+			+min_lg
+				flex-basis: 55.7%
+				max-width: 55.7%
 
 		&--title
 			font-size: 13px

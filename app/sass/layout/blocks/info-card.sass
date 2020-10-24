@@ -5,6 +5,16 @@
 	padding: 40px 30px 30px
 	max-width: 360px
 	position: relative
+	+xl
+		padding: 20px
+	// ----- //
+	+lg
+		width: 100%
+		max-width: 100%
+	+min_lg
+		margin-left: auto
+	// ----- //
+
 	&:after
 		content: ''
 		position: absolute
@@ -17,6 +27,8 @@
 
 	&--fix-table
 		padding: 40px 30px 40px
+		+xl
+			padding: 20px 15px
 		.info-card
 			&__bottom-line
 				flex-direction: column
