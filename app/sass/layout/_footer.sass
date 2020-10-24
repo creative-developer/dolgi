@@ -1,9 +1,13 @@
 .footer
-	overflow: hidden
-
 	&__top-line
 		background: $accentLighten
 		padding: 50px 0 82px
+		+xl
+			padding: 50px 0
+		+lg
+			padding: 50px 0 24px
+		+md
+			padding: 50px 0 0
 
 	&__row
 		justify-content: space-between
@@ -13,13 +17,77 @@
 		&--first
 			flex-basis: 34.27%
 			max-width: 34.27%
+			+xl
+				flex-basis: 28%
+				max-width: 28%
+			+lg
+				display: none
+
 		&--second
 			flex-basis: 65.73%
 			max-width: 65.73%
+			+xl
+				flex-basis: 72%
+				max-width: 72%
+			+lg
+				flex-basis: 100%
+				max-width: 100%
+				.footer
+					&__col
+						&:last-child
+							flex: 1 1 100%
+							max-width: 100%
+							margin-top: 40px
+					&__clone-links
+						display: flex
+						align-items: center
+						justify-content: space-between
+
+			+md
+				.footer
+					&__col
+						flex: 1 1 100%
+						max-width: 100%
+						margin-bottom: 40px
+						text-align: center
+						display: flex
+						flex-direction: column
+						align-items: center
+						&:last-child
+							margin-top: 0
+					&__clone-links
+						flex-wrap: wrap
+						justify-content: center
+						.footer__politics-wrap
+							width: 100%
+							order: -1
+							margin-bottom: 15px
+
+	&__clone-links
+		display: none
 
 	&__bottom-line
 		background: $accent
 		padding: 12px 0
+		+lg
+			.footer__col
+				&--first
+					display: block
+					flex: 1 1 100%
+					max-width: 100%
+					text-align: center
+				&--second
+					display: none
+
+		+md
+			.footer__col
+				&--first
+					flex: 1 1 100%
+					max-width: 100%
+					display: block
+					text-align: center
+					&--second
+						display: none
 
 	&__title
 		font-weight: 600
@@ -27,6 +95,9 @@
 		line-height: 17px
 		color: #FFFFFF
 		margin-bottom: 29px
+		+md
+			margin-bottom: 10px
+
 		&.mb-20
 			margin-bottom: 20px
 
@@ -56,6 +127,10 @@
 	&__politics-wrap
 		display: flex
 		align-items: center
+		+md
+			flex-direction: column
+			.footer__link
+				margin: 0 !important
 
 	&__icon-wrap
 		display: flex
