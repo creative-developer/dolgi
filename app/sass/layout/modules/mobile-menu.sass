@@ -1,6 +1,64 @@
 .mobile-menu
-	background: #fff
-	padding: 36px	0
-	border-bottom: 1px solid #DEE5EF
+	+lg
+		position: absolute
+		background: #fff
+		top: 0
+		left: 0
+		width: 100%
+		height: auto
+		padding-bottom: 24px
+		transform: translateY(-100%)
+		box-shadow: $bxShadow
+		transition: all 0.3s ease
+		z-index: 2
+		&.opened
+			transform: translateY(0)
 	+min_lg
 		display: none
+
+	&__link
+		+lg
+			font-weight: 500
+			font-size: 17px
+			line-height: 17px
+			color: $c1
+			&:hover
+				color: $c1
+
+		&--phone
+			+lg
+				margin-bottom: 10px
+		&--email
+			+lg
+				color: $accentLighten
+				&:hover
+					color: $c1
+
+	&__top-line
+		+lg
+			padding: 34px 0
+			border-bottom: 1px solid #DEE5EF
+			margin-bottom: 30px
+		+sm
+			padding: 37px 0
+
+	&__center-line
+		+lg
+			margin-bottom: 40px
+
+	&__small-text
+		+lg
+			font-size: 13px
+			line-height: 13px
+			color: #BABABA
+			margin-bottom: 10px
+
+	&__link-wrap
+		+lg
+			display: flex
+			flex-direction: column
+			margin-bottom: 20px
+
+	&__title
+		+lg
+			margin-bottom: 0
