@@ -1,15 +1,24 @@
 .unpaid-debt
 	background: #fff
-	border: 1px solid $accentLighten
-	border-radius: 2px
+	+min_md
+		border-radius: 2px
+		border: 1px solid $accentLighten
 	&__header
 		display: flex
 		align-items: center
 		background: #fff
-		border-radius: 2px
-		border: 1px solid $accentLighten
-		margin: -1px
-		padding: 14px 25px 16px
+		+min_md
+			margin: -1px
+			padding: 14px 25px 16px
+			border-radius: 2px
+			border: 1px solid $accentLighten
+		+md
+			margin-bottom: 16px
+		.unpaid-debt__col
+			&:last-child
+				+md
+					display: none
+
 		&-title
 			font-size: 15px
 			line-height: 18px
@@ -24,15 +33,28 @@
 			max-width: 22%
 
 	&__body
-		padding: 0 24px
+		+min_md
+			padding: 0 24px
 
 	&__item
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
 		padding: 32px 0 28.5px
+		+md
+			position: relative
+			flex-direction: column
+			padding: 30px
+			border: 1px solid $accentLighten
+			border-radius: 2px
 		&:not(:last-child)
-			border-bottom: 1px solid #DEE5EF
+			margin-bottom: -1px
+			+min_md
+				border-bottom: 1px solid #DEE5EF
+		.unpaid-debt__col
+			&:first-child
+				+md
+					margin-bottom: 20px
 
 	&__title
 		font-weight: 600
@@ -58,3 +80,9 @@
 			font-size: 13px
 			line-height: 16px
 			color: $c2
+
+	.cancel-btn
+		+md
+			position: absolute
+			top: 20px
+			right: 20px

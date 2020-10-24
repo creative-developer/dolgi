@@ -1,5 +1,5 @@
 .receipt-download
-	padding: 94px 0 120px
+	padding: 5.875rem 0 7.5rem
 
 	&__wrap
 		display: flex
@@ -19,7 +19,9 @@
 			height: 88px
 			background: #F2F5F8
 			border-radius: 50%
-			margin-bottom: 51px
+			margin-bottom: 3.1875rem
+			+sm
+				margin-bottom: 15px
 
 	&__title
 		margin-bottom: 19px
@@ -29,21 +31,28 @@
 	&__desc
 		max-width: 497px
 		text-align: center
-		margin-bottom: 56px
+		margin-bottom: 3.5rem
 
 	&__form
 		display: flex
 		align-items: flex-end
 		justify-content: center
 		width: 100%
+		+sm
+			flex-direction: column
+			align-items: center
 
 	&__btn
-		max-width: 200px
+		+min_sm
+			max-width: 200px
 
 	&__input
-		margin-right: 13px
-		max-width: 330px
-		margin-bottom: 0 !important
+		+min_sm
+			margin-right: 13px
+			margin-bottom: 0 !important
+			max-width: 330px
+		+sm
+			width: 100%
 		.input
 			&__text
 				color: #000

@@ -2,6 +2,10 @@
 	background: #EBEDF4
 	border-radius: 5px
 	padding: 40px
+	+lg
+		padding: 30px
+	+sm
+		padding: 20px
 
 	&__title
 		margin-bottom: 13px
@@ -14,12 +18,21 @@
 		display: flex
 		align-items: center
 		margin: 0 -10px
+		+md
+			flex-wrap: wrap
 
 	&__col
 		padding: 0 10px
+		+md
+			flex-basis: 100%
+			max-width: 100%
 		&--left
-			flex-basis: 68.2%
-			max-width: 68.2%
+			+min_md
+				flex-basis: 68.2%
+				max-width: 68.2%
+			+md
+				margin-bottom: 16px
 		&--right
-			flex-basis: 31.8%
-			max-width: 31.8%
+			+min_md
+				flex-basis: 31.8%
+				max-width: 31.8%

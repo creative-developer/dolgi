@@ -54,40 +54,69 @@
 
 	&--unbordered
 		border: 0
-		margin-top: 1px
-		padding: 7px 0
+		+min_md
+			padding: 7px 0
+			margin-top: 1px
 		.debt-table
-
 			&__header
 				margin: 0
 				padding: 20px 0 18px
 				border: 0
 				cursor: default
+				+md
+					position: relative
+					flex-wrap: wrap
+					border-radius: 2px
+					border: 1px solid $accentLighten
+					padding: 20px
+					margin-bottom: -1px
 
 			&__body
 				padding: 10px 0
+				+md
+					padding: 10px
+					border-radius: 2px
+					border: 1px solid $accentLighten
 
 			&__col
+				+md
+					flex-basis: 100%
+					max-width: 100%
 				&:first-child
-					flex-basis: 77.8%
-					max-width: 77.8%
+					+min_md
+						flex-basis: 77.8%
+						max-width: 77.8%
+					+md
+						margin-bottom: 16px
 				&:last-child
-					flex-basis: 22.2%
-					max-width: 22.2%
+					+min_md
+						flex-basis: 22.2%
+						max-width: 22.2%
 
-			&__title-wrap
-				max-width: 400px
+			&__title
+				+md
+					margin-bottom: 15px
+					margin-right: 0
+				&-wrap
+					max-width: 400px
+					+md
+						flex-direction: column
 
 			&__tr
 				padding: 11.3px 17px 11.3px 14px
 
 			&__td
+				+md
+					flex-basis: 100%
+					max-width: 100%
 				&:first-child
-					flex-basis: 42%
-					max-width: 42%
+					+min_md
+						flex-basis: 42%
+						max-width: 42%
 				&:last-child
-					flex-basis: 58%
-					max-width: 58%
+					+min_md
+						flex-basis: 58%
+						max-width: 58%
 
 	&__header
 		display: flex

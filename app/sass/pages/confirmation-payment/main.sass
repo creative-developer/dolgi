@@ -1,15 +1,25 @@
 .confirmation-payment
 	padding: 17px 0 120px
+	+lg
+		padding: 5px 0 50px
+
 	&--bailiff-service
+		.price__text
+			+md
+				color: $warningColor
+				font-weight: bold
 		.confirmation-payment
 			&__unpaid-debt
 				margin-bottom: 37px
-
 	&__title
 		margin-bottom: 47px
+		+lg
+			margin-bottom: 40px
 
 	&__unpaid-debt
 		margin-bottom: 59px
+		+md
+			margin-bottom: 30px
 
 	&__input
 		&:not(:last-child)
@@ -20,30 +30,39 @@
 			display: none
 
 	&__wrap
-		position: relative
-		&:before
-			content: ''
-			position: absolute
-			top: 0
-			right: -50px
-			width: 1px
-			height: 100%
-			background: $bdColor
-			opacity: 0.5
+		+min_lg
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				right: -50px
+				width: 1px
+				height: 100%
+				background: $bdColor
+				opacity: 0.5
 
 	&__fields
 		margin-bottom: 34px
+		+md
+			margin-bottom: 16px
 
 	&__info
 		display: flex
 		align-items: center
 		justify-content: flex-end
 		margin-bottom: 30px
+		+md
+			flex-direction: column
+			align-items: flex-end
 		&-title
 			font-size: 15px
 			line-height: 18px
 			color: $c1
-			margin-right: 10px
+			+min_md
+				margin-right: 10px
+			+md
+				margin-bottom: 16px
 
 		&-value
 			font-weight: 600
@@ -54,3 +73,13 @@
 
 	&__flex-end
 		align-items: center
+
+	&__agreement-col
+		+md
+			order: 2
+			margin-bottom: 0
+
+	&__btn-col
+		+md
+			order: 1
+			margin-bottom: 16px
