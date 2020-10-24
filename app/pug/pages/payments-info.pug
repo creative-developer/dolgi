@@ -1,22 +1,22 @@
 extend ../layout/template
 
 block head
-	- var title = 'Информация об оплате:'
+	- var title = 'Информация об оплате?'
 	|
 	|
 
 block content
 	+breadcrumbs([
-		{ path: '/payments-info', title: ' Информация об оплате:' }
+		{ path: '/payments-info', title: 'Информация об оплате?' }
 	])
 	main.payments-info-page
 		// Sections
 		section.b-payments-info
 			.container
 				.row
-					.col-10
+					.col-lg-10
 						._wrap
-							h1._main-title  Информация об оплате:
+							h1._main-title Информация об оплате?
 							._main-desc.md-desc
 								p Оплата любого тарифа возможна банковской картой, Яндекс Деньгами, Qiwi кошелек, оплата мобильным телефоном<br> и Webmoney. Оплата проверки автомобиля осуществляется на сайте через платежный агрегатор PayAnyWay. После оплаты в течение 5-30 мин. на ваш почтовый адрес поступит письмо с полным отчетом о проверке. В случае возникновения вопросов или трудностей при оплате, свяжитесь с тех. поддержкой по e-mail.
 							h2._title.mb-15 Банковские карты

@@ -3,10 +3,14 @@
 	border-radius: 5px
 	background: #FFFFFF
 	border: 1px solid $bdColor
+	+lg
+		padding: 30px
 
 	&__row
 		display: flex
 		margin: 0 -25px
+		+md
+			flex-wrap: wrap
 		&:not(:last-child)
 			margin-bottom: 30px
 
@@ -14,6 +18,11 @@
 		padding: 0 25px
 		flex-basis: 50%
 		max-width: 50%
+		+md
+			flex-basis: 100%
+			max-width: 100%
+			&:not(:last-child)
+				margin-bottom: 30px
 
 	&__item
 	&__img

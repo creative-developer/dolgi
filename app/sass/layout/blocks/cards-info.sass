@@ -3,17 +3,26 @@
 	border: 1px solid #CAD2DF
 	border-radius: 5px
 	padding: 40px
+	+lg
+		padding: 30px
 
 	&__top-line
 
 	&__row
 		display: flex
 		margin: 0 -25px
+		+md
+			flex-wrap: wrap
 
 	&__col
 		padding: 0 25px
 		flex-basis: 50%
 		max-width: 50%
+		+md
+			flex-basis: 100%
+			max-width: 100%
+			&:not(:last-child)
+				margin-bottom: 30px
 		&:first-child
 		&:last-child
 
@@ -23,6 +32,8 @@
 
 	&__icons-wrap
 		margin-bottom: 39px
+		+lg
+			margin-bottom: 30px
 
 	&__desc
 		line-height: 22px
