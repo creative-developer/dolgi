@@ -29,6 +29,10 @@
 
 	&__img-wrap
 		height: 200px
+		+md
+			height: 300px
+		+sm
+			height: 52vw
 		img
 			width: 100%
 			height: 100%
@@ -41,12 +45,16 @@
 		align-items: flex-start
 		justify-content: space-between
 		padding: 31px 35px
+		+xl
+			padding: 20px
 
 	&__published-on
 		font-size: 15px
 		line-height: 15px
 		color: $c2
 		margin-bottom: 24px
+		+xl
+			margin-bottom: 20px
 
 	&__title
 		flex: 1
@@ -54,9 +62,10 @@
 		line-height: 22px
 		font-weight: 500
 		color: $c1
-		min-height: 86px
 		margin-bottom: 25px
 		transition: all .4s ease
+		+min-md
+			min-height: 86px
 
 	&__more-link
 		margin-bottom: 3px

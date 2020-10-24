@@ -1,19 +1,29 @@
 .news-filters
-	margin-bottom: 36px
+	margin-bottom: 18px
+	+sm
+		width: calc(100% + 30px)
+		padding-left: 15px
+		margin-bottom: -15px
+		margin-left: -15px
+		overflow-x: auto
 
 	&__list
 		display: flex
+		flex-wrap: wrap
 		align-items: center
+		+sm
+			flex-wrap: nowrap
 
 	&__item
-		&:not(:last-child)
-			margin-right: 10px
+		margin-bottom: 10px
+		margin-right: 10px
 
 	&__link
+		display: block
 		font-size: 13px
 		line-height: 13px
 		color: $c1
-		padding: 10px 16px
+		padding: 12px 16px
 		border-radius: 5px
 		border: 1px solid $bdColor
 		&:hover
