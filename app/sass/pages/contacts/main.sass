@@ -1,17 +1,35 @@
 .contacts
 	padding: 17px 0 119px
+	+md
+		padding-top: 5px
+		padding-bottom: 70px
+	+sm
+		padding-bottom: 50px
+
 	.map
 		display: flex
 		justify-content: flex-end
 		height: 500px
 		width: 100% !important
+		overflow: hidden
+		+lg
+			margin-top: 50px
+		+md
+			height: 400px
+		+sm
+			height: 300px
 		#map
 			width: 100% !important
 			height: 100% !important
-			max-width: 620px
+			+min_lg
+				max-width: 620px
 
 	&__title
 		margin-bottom: 59px
+		+xl
+			margin-bottom: 35px
+		+md
+			margin-bottom: 25px
 
 	&__sub-title
 		line-height: 20px
@@ -35,6 +53,8 @@
 
 	&__work-time
 		margin-bottom: 50px
+		+md
+			margin-bottom: 30px
 
 	&__small-title
 		font-size: 13px
@@ -47,6 +67,9 @@
 		line-height: 15px
 		color: $c1
 		margin-bottom: 50px
+		+md
+			line-height: 24px
+			margin-bottom: 30px
 
 	&__phone
 		display: inline-block
